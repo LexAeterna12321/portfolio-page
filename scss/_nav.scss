@@ -1,0 +1,62 @@
+.nav {
+    &__ul {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 20vw;
+        transition: all $trs-time;
+        list-style: none;
+        transform: translateX(200%);
+        background-color: yellow;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, .9);
+        color: $secondary-color;
+        mix-blend-mode: difference;
+
+        & li {
+            margin: 30px 0;
+            text-transform: uppercase;
+
+            & a {
+                text-decoration: none;
+                color: grey;
+            }
+        }
+
+        & li:hover a {
+            transition: all $trs-time;
+            color: white;
+            cursor: pointer;
+
+        }
+    }
+
+    &:hover &__ul {
+        transform: translateX(0)
+    }
+}
+
+.hamburger {
+    font-size: 3vw;
+    position: fixed;
+    top: 5%;
+    right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50px;
+    height: 50px;
+    transform: translateX(-100%);
+    z-index: 2;
+    cursor: pointer;
+
+    & span {
+        width: 100%;
+        height: 5px;
+        background-color: $secondary-color;
+    }
+}
