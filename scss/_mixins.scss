@@ -5,4 +5,46 @@
     padding: 10px 15px;
     text-transform: uppercase;
     cursor: pointer;
+    @include highlight;
+}
+
+@mixin highlight {
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 120%;
+        height: 100%;
+        background-color: darken($main-color, 10%);
+        transform: translate(-50%, -50%) rotate(-5deg);
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+        z-index: -1;
+    }
+
+
+    &:hover {
+        &::before {
+            opacity: .7;
+        }
+    }
+
+}
+
+@mixin siteChangeAnim {
+    @keyframes anim {
+        0% {
+            bottom: -110%;
+        }
+
+        50% {
+            bottom: 0;
+        }
+
+        100% {
+            bottom: 110%
+        }
+    }
 }

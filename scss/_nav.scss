@@ -13,12 +13,13 @@
         align-items: center;
         background-color: rgba(0, 0, 0, .9);
         color: $secondary-color;
-        z-index: 3;
+        z-index: 5;
         opacity: 0;
         will-change: opacity, width;
         pointer-events: none;
         mix-blend-mode: overlay;
         font-size: 1.3rem;
+        font-weight: bold;
 
         & li {
             margin: 30px 0;

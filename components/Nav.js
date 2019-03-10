@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const Nav = () => {
+const Nav = ({ siteChange }) => {
   return (
     <nav className="nav">
       <div className="hamburger">
@@ -11,14 +11,10 @@ const Nav = () => {
       </div>
       <ul className="nav__ul">
         <li>
-          <Link href="./home">
-            <a>Home</a>
-          </Link>
+          <a onClick={() => siteChange("/")}>Home</a>
         </li>
         <li>
-          <Link href="./about">
-            <a>About Me</a>
-          </Link>
+          <a onClick={() => siteChange("about")}>About Me</a>
         </li>
         <li>
           <Link href="./portfolio">

@@ -1,5 +1,61 @@
 ((window["webpackJsonp"] = window["webpackJsonp"] || []).push([["static\\development\\pages\\index.js"],{
 
+/***/ "./components/About.js":
+/*!*****************************!*\
+  !*** ./components/About.js ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Nav */ "./components/Nav.js");
+var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\react\\nextPortfolio\\portfolio-page\\components\\About.js";
+
+
+
+var About = function About(_ref) {
+  var siteChange = _ref.siteChange;
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "about",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+    className: "about__h1",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, "I'm a programmer"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h2", {
+    className: "about__h2",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, "Passionate IT guy"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "about__button",
+    onClick: function onClick() {
+      return siteChange("/");
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, "Discover More"));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (About);
+
+/***/ }),
+
 /***/ "./components/Container.js":
 /*!*********************************!*\
   !*** ./components/Container.js ***!
@@ -11,7 +67,9 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Nav */ "./components/Nav.js");
 var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\react\\nextPortfolio\\portfolio-page\\components\\Container.js";
+
 
 
 var Container = function Container(props) {
@@ -19,10 +77,23 @@ var Container = function Container(props) {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 4
+      lineNumber: 6
     },
     __self: this
-  }, props.children);
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "container--inner",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }), props.children));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Container);
@@ -45,21 +116,16 @@ var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\react\\nextPortfolio\\p
 
 
 
-var Home = function Home() {
+var Home = function Home(_ref) {
+  var siteChange = _ref.siteChange;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "home",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 6
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "home__h1",
     __source: {
       fileName: _jsxFileName,
@@ -75,19 +141,15 @@ var Home = function Home() {
     __self: this
   }, "Passionate IT guy"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "home__button",
+    onClick: function onClick() {
+      return siteChange("about");
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 9
     },
     __self: this
-  }, "Discover More"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "home--inner",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }));
+  }, "Discover More"));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
@@ -111,7 +173,8 @@ var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\react\\nextPortfolio\\p
 
 
 
-var Nav = function Nav() {
+var Nav = function Nav(_ref) {
+  var siteChange = _ref.siteChange;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
     className: "nav",
     __source: {
@@ -157,74 +220,66 @@ var Nav = function Nav() {
       lineNumber: 13
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "./home",
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    onClick: function onClick() {
+      return siteChange("/");
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 14
     },
     __self: this
+  }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    onClick: function onClick() {
+      return siteChange("about");
+    },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 17
     },
     __self: this
-  }, "Home"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "./about",
+  }, "About Me")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 19
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
-  }, "About Me"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 23
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "./portfolio",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 20
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 21
     },
     __self: this
   }, " Portfolio"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 24
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
     href: "./contact",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 25
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 26
     },
     __self: this
   }, "Contact")))));
@@ -684,6 +739,36 @@ function _createClass(Constructor, protoProps, staticProps) {
   if (protoProps) _defineProperties(Constructor.prototype, protoProps);
   if (staticProps) _defineProperties(Constructor, staticProps);
   return Constructor;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _defineProperty; });
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__);
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
 }
 
 /***/ }),
@@ -10769,15 +10854,29 @@ module.exports = function(module) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles.scss */ "./styles.scss");
-/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next-server/head */ "./node_modules/next-server/head.js");
-/* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_server_head__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_Container__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Container */ "./components/Container.js");
-/* harmony import */ var _components_Home__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Home */ "./components/Home.js");
-/* harmony import */ var _components_Nav__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../components/Nav */ "./components/Nav.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../styles.scss */ "./styles.scss");
+/* harmony import */ var _styles_scss__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_styles_scss__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! next-server/head */ "./node_modules/next-server/head.js");
+/* harmony import */ var next_server_head__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(next_server_head__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _components_Container__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../components/Container */ "./components/Container.js");
+/* harmony import */ var _components_Home__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../components/Home */ "./components/Home.js");
+/* harmony import */ var _components_About__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../components/About */ "./components/About.js");
+
+
+
+
+
+
+
 var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\react\\nextPortfolio\\portfolio-page\\pages\\index.js";
 
 
@@ -10786,47 +10885,132 @@ var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\react\\nextPortfolio\\p
 
 
 
-var Index = function Index() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("title", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, "Rafa\u0142 Cie\u015Blik Portfolio"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("meta", {
-    name: "viewport",
-    content: "initial-scale=1.0, width=device-width",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Container__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Home__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
-  })));
-};
+var Index =
+/*#__PURE__*/
+function (_React$Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(Index, _React$Component);
+
+  function Index() {
+    var _getPrototypeOf2;
+
+    var _this;
+
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, Index);
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, (_getPrototypeOf2 = Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(Index)).call.apply(_getPrototypeOf2, [this].concat(args)));
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "state", {
+      siteActive: "/"
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "siteChange", function (site) {
+      _this.triggerSiteChange(site);
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "triggerSiteChange", function (site) {
+      if (site === _this.state.siteActive) return;
+      var changer = document.querySelector(".site-change");
+      changer.classList.add("site-change--active");
+      setTimeout(function () {
+        _this.setState({
+          siteActive: site
+        });
+
+        setTimeout(function () {
+          changer.classList.remove("site-change--active");
+        }, 1000);
+      }, 1500);
+    });
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "renderPage", function () {
+      switch (_this.state.siteActive) {
+        case "/":
+          return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_Home__WEBPACK_IMPORTED_MODULE_11__["default"], {
+            siteChange: _this.siteChange,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 31
+            },
+            __self: this
+          });
+
+        case "about":
+          return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_About__WEBPACK_IMPORTED_MODULE_12__["default"], {
+            siteChange: _this.siteChange,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 33
+            },
+            __self: this
+          });
+
+        default:
+          return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_Home__WEBPACK_IMPORTED_MODULE_11__["default"], {
+            siteChange: _this.siteChange,
+            __source: {
+              fileName: _jsxFileName,
+              lineNumber: 35
+            },
+            __self: this
+          });
+      }
+    });
+
+    return _this;
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(Index, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_9___default.a, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 41
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("title", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 42
+        },
+        __self: this
+      }, "Rafa\u0142 Cie\u015Blik Portfolio"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("meta", {
+        name: "viewport",
+        content: "initial-scale=1.0, width=device-width",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 43
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_Container__WEBPACK_IMPORTED_MODULE_10__["default"], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 48
+        },
+        __self: this
+      }, this.renderPage(), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
+        className: "site-change",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 50
+        },
+        __self: this
+      })));
+    }
+  }]);
+
+  return Index;
+}(react__WEBPACK_IMPORTED_MODULE_7___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
 

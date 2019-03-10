@@ -2,17 +2,15 @@
     position: relative;
     max-width: 1280px;
     margin: 0 auto;
-
     background-color: $main-color;
-    height: 90vh;
-    width: 95%;
-    z-index: 1;
+    height: 100%;
+    width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 15px $secondary-color solid;
+    overflow: hidden;
 
     &__h1 {
         font-size: 3rem;
@@ -24,52 +22,14 @@
         position: relative;
         z-index: 4;
         margin: 5% 0;
-        @include buttonMixin($main-color, $secondary-color);
+        @include buttonMixin($secondary-color, transparent);
     }
-
-
-    &--inner {
-
-        position: absolute;
-        display: flex;
-        align-items: center;
-        width: 95%;
-        height: 90vh;
-        margin: 0 auto;
-        max-width: 1280px;
-        background-color: transparent;
-
-        &::before,
-        &::after {
-            background-color: transparent;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            content: '';
-            width: 88%;
-            height: 92%;
-            border: 1px solid $secondary-color;
-        }
-
-        &::after {
-            width: 91%;
-            height: 89%;
-        }
-    }
-
 }
-
 
 @media screen and (max-width:$mobileBP) {
     .home {
         height: 100vh;
         width: 100vw;
-        z-index: 1;
         border: none;
-
-        &--inner {
-            width: 100%
-        }
     }
 }
