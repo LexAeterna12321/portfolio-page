@@ -5,7 +5,7 @@ import Home from "../components/Home";
 import About from "../components/About";
 
 class Index extends React.Component {
-  state = { siteActive: "/" };
+  state = { siteActive: "about" };
 
   siteChange = site => {
     this.triggerSiteChange(site);
@@ -45,7 +45,7 @@ class Index extends React.Component {
             content="initial-scale=1.0, width=device-width"
           />
         </Head>
-        <Container>
+        <Container siteChange={this.siteChange}>
           {this.renderPage()}
           <div className="site-change" />
         </Container>

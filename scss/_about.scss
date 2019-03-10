@@ -1,40 +1,73 @@
 .about {
     position: relative;
-    max-width: 1280px;
-    margin: 0 auto;
+    max-width: $max-width;
+
+    padding: 70px;
     overflow: hidden;
     background-color: $secondary-color;
     color: $main-color;
-    height: 90vh;
-    width: 95%;
+    height: 100%;
+    width: 100%;
     z-index: 1;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+
     border: 15px $main-color solid;
     overflow-y: scroll;
+    grid-template-columns: repeat(2, 1fr);
 
     &__h1 {
-        font-size: 3rem;
+        font-size: 1.5rem;
         text-transform: uppercase;
-        padding: 10px 40px;
+        margin: 10px;
+        grid-column: 1 / -1;
     }
 
-    &__button {
-        position: relative;
-        z-index: 4;
-        margin: 5% 0;
-        @include buttonMixin($main-color, transparent);
+    &__basic-info {
+        list-style: none;
+        padding: 0 15px;
+        font-weight: 700;
+        color: $third-color;
+
+        & li {
+            padding: 20px 0;
+            border-bottom: 1px solid $main-color;
+
+            & span {
+                font-weight: normal;
+                color: $main-color;
+            }
+        }
+
+        & li:first-child {
+            padding-top: 0;
+        }
+
+        & li:last-child {
+            border-bottom: none;
+        }
+    }
+
+    // &__button {
+    //     position: relative;
+    //     z-index: 4;
+    //     margin: 5% 0;
+    //     @include buttonMixin($main-color, transparent);
+    // }
+
+    ::-webkit-scrollbar {
+        width: 3px;
     }
 }
 
 @media screen and (max-width:$mobileBP) {
     .about {
+        position: fixed;
+        top: 0;
+        left: 0;
         height: 100vh;
         width: 100vw;
-        z-index: 1;
         border: none;
+        grid-template-columns: 1fr;
+
     }
 }

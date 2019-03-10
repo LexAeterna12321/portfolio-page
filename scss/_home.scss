@@ -1,6 +1,6 @@
 .home {
     position: relative;
-    max-width: 1280px;
+    max-width: $max-width;
     margin: 0 auto;
     background-color: $main-color;
     height: 100%;
@@ -28,6 +28,9 @@
 
 @media screen and (max-width:$mobileBP) {
     .home {
+        position: fixed;
+        top: 0;
+        left: 0;
         height: 100vh;
         width: 100vw;
         border: none;

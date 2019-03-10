@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     background-color: #f3f3f3;
+
 }
 
 .container--inner {
@@ -16,7 +17,7 @@
     width: 95%;
     height: 90vh;
     margin: 0 auto;
-    max-width: 1280px;
+    max-width: $max-width;
     background-color: transparent;
     z-index: 4;
 
@@ -28,16 +29,18 @@
         left: 50%;
         transform: translate(-50%, -50%);
         content: '';
-        width: 88%;
-        height: 92%;
+        width: 92%;
+        height: 96%;
         border: 1px solid $secondary-color;
-        z-index: 100;
+        mix-blend-mode: color-dodge;
+        z-index: 2;
         pointer-events: none;
+
     }
 
     &::after {
-        width: 91%;
-        height: 89%;
+        width: 95%;
+        height: 93%;
     }
 }
 
@@ -49,6 +52,15 @@
     background-color: $secondary-color;
     z-index: 4;
 
+}
+
+@media screen and (max-width:$mobileBP) {
+    .site-change {
+        position: fixed;
+        bottom: 100%;
+        left: 0;
+        z-index: 4;
+    }
 }
 
 .site-change--active {
