@@ -12,7 +12,6 @@ const Index = () => {
       </Head>
       <Container>
         <Home />
-        <Nav />
       </Container>
     </div>
   );

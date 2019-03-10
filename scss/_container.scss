@@ -5,42 +5,4 @@
     display: flex;
     align-items: center;
     background-color: #f3f3f3;
-
-    &--inner {
-        position: relative;
-        display: flex;
-        align-items: center;
-        width: 95%;
-        height: 90vh;
-        margin: 0 auto;
-        background-color: $secondary-color;
-        max-width: 1280px;
-
-        &::before,
-        &::after {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            content: '';
-            width: 88%;
-            height: 92%;
-            border: 1px solid $secondary-color;
-            z-index: 2;
-        }
-
-        &::after {
-            width: 91%;
-            height: 89%;
-        }
-    }
-
-}
-
-@media screen and (max-width:760px) {
-    .container {
-        &--inner {
-            width: 100%
-        }
-    }
 }

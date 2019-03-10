@@ -1,5 +1,6 @@
 // colors from: https://flatuicolors.com/palette/se
 
-$trs-time: 0.6s ease-out;
+$trs-time: 0.6s cubic-bezier(.785, .135, .15, .86);
 $main-color: #2d3986;
-$secondary-color:#d2dae2
+$secondary-color:#d2dae2;
+$mobileBP: 760px;

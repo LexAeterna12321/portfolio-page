@@ -9,7 +9,6 @@ const Nav = () => {
         <span />
         <span />
       </div>
-
       <ul className="nav__ul">
         <li>
           <Link href="./home">
