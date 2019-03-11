@@ -1,15 +1,15 @@
-import React from "react";
-
+import Skills from "./Skills";
+import Education from "./Education";
 const About = () => {
   return (
     <div className="about">
-      <h1 className="about__h1">I'm a programmer</h1>
+      <h1 className="about__h1">I'm a novice programmer</h1>
       <ul className="about__basic-info">
         <li>
-          Name: <span>John Doe</span>
+          Name: <span>Rafał Cieślik</span>
         </li>
         <li>
-          Job: <span>Freelancer</span>
+          Job: <span>Clerk</span>
         </li>
         <li>
           Age: <span>30 Years</span>
@@ -23,10 +23,13 @@ const About = () => {
       </ul>
       <div className="about__description">
         Hi There, I'm self taught web developer. I'm refactoring myself from
-        scratch. I've fallen in love with Front end world, especially javascript
-        teamed up with react js framework.
+        scratch. I've fallen in love with Front end world, especially javaScript
+        teamed up with React.js framework.
       </div>
       <h1 className="about__h1">My skills</h1>
+      <Skills />
+      <h1 className="about__h1">My education</h1>
+      <Education />
     </div>
   );
 };

@@ -67,12 +67,14 @@ body {
     z-index: 4; } }
 
 .site-change--active {
-  animation: anim 3s 1 both; }
+  animation: anim 2s 1 both; }
 
 @keyframes anim {
   0% {
     bottom: -110%; }
   50% {
+    bottom: 0; }
+  65% {
     bottom: 0; }
   100% {
     bottom: 110%; } }
@@ -95,7 +97,6 @@ body {
   opacity: 0;
   will-change: opacity, width;
   pointer-events: none;
-  mix-blend-mode: overlay;
   font-size: 1.3rem;
   font-weight: bold; }
   .nav__ul li {
@@ -118,7 +119,7 @@ body {
 .hamburger {
   font-size: 3vw;
   position: absolute;
-  top: 10%;
+  top: 5%;
   right: 10%;
   display: flex;
   flex-direction: column;
@@ -190,12 +191,16 @@ body {
     left: 0;
     height: 100vh;
     width: 100vw;
-    border: none; } }
+    border: none; }
+    .home__h1 {
+      font-size: 2rem; }
+    .home__h2 {
+      font-size: 1.2rem; } }
 
 .about {
   position: relative;
   max-width: 1480px;
-  padding: 70px;
+  padding: 100px 70px;
   overflow: hidden;
   background-color: #d2dae2;
   color: #2d3986;
@@ -203,6 +208,7 @@ body {
   width: 100%;
   z-index: 1;
   display: grid;
+  grid-gap: 30px;
   border: 15px #2d3986 solid;
   overflow-y: scroll;
   grid-template-columns: repeat(2, 1fr); }
@@ -226,8 +232,11 @@ body {
       padding-top: 0; }
     .about__basic-info li:last-child {
       border-bottom: none; }
-  .about ::-webkit-scrollbar {
-    width: 3px; }
+  .about::-webkit-scrollbar {
+    width: 5px; }
+  .about::-webkit-scrollbar-thumb {
+    background-color: #2d3986;
+    outline: 1px solid #1e272e; }
 
 @media screen and (max-width: 760px) {
   .about {
@@ -238,6 +247,40 @@ body {
     width: 100vw;
     border: none;
     grid-template-columns: 1fr; } }
+
+.icons {
+  grid-column: -1/1;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px; }
+  .icons__icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center; }
+    .icons__icon i {
+      font-size: 2.4rem; }
+
+.education {
+  grid-column: -1/1;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 30px; }
+  .education__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    color: #2d3986;
+    font-weight: 700; }
+    .education__item p:first-child {
+      color: #1e272e; }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

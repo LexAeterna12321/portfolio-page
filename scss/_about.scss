@@ -2,7 +2,7 @@
     position: relative;
     max-width: $max-width;
 
-    padding: 70px;
+    padding: 100px 70px;
     overflow: hidden;
     background-color: $secondary-color;
     color: $main-color;
@@ -10,7 +10,7 @@
     width: 100%;
     z-index: 1;
     display: grid;
-
+    grid-gap: 30px;
     border: 15px $main-color solid;
     overflow-y: scroll;
     grid-template-columns: repeat(2, 1fr);
@@ -54,8 +54,15 @@
     //     @include buttonMixin($main-color, transparent);
     // }
 
-    ::-webkit-scrollbar {
-        width: 3px;
+
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $main-color;
+        ;
+        outline: 1px solid $third-color;
     }
 }
 
