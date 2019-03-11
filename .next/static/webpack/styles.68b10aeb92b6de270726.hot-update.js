@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["styles"],{
+webpackHotUpdate("styles",{
 
 /***/ "./styles.scss":
 /*!*********************!*\
@@ -29,7 +29,7 @@
           .querySelectorAll("link[href][rel=stylesheet]")
           .forEach(function(link) {
             if (!link.href.match(prefix) || link.stale) return;
-            injectCss(link, link.href.split("?")[0] + "?unix=1552342812702");
+            injectCss(link, link.href.split("?")[0] + "?unix=1552342632471");
           });
       }
     }
@@ -37,5 +37,5 @@
 
 /***/ })
 
-}]);
-//# sourceMappingURL=styles.js.map
+})
+//# sourceMappingURL=styles.68b10aeb92b6de270726.hot-update.js.map

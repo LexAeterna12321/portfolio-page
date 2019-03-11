@@ -200,30 +200,43 @@ var About = function About() {
       lineNumber: 24
     },
     __self: this
-  }, "Hi There, I'm self taught web developer. I'm refactoring myself from scratch. I've fallen in love with Front end world, especially javaScript teamed up with React.js framework."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }, "Hi There, I'm self taught web developer. I'm refactoring myself from scratch. I've fallen in love with Front end world, especially javaScript teamed up with React.js framework."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+    className: "about__description__button",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  }, "Hire Me")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "about__h1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 33
     },
     __self: this
   }, "My skills"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Skills__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 34
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "about__h1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 35
     },
     __self: this
   }, "My education"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Education__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 36
     },
     __self: this
   }));
@@ -1940,7 +1953,7 @@ var Index = function Index() {
           siteChange: triggerSiteChange,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 27
+            lineNumber: 28
           },
           __self: this
         });
@@ -1950,7 +1963,7 @@ var Index = function Index() {
           siteChange: triggerSiteChange,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 29
+            lineNumber: 30
           },
           __self: this
         });
@@ -1960,7 +1973,7 @@ var Index = function Index() {
           siteChange: triggerSiteChange,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 31
+            lineNumber: 32
           },
           __self: this
         });
@@ -1970,19 +1983,19 @@ var Index = function Index() {
   var content = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 37
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_4___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 38
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 39
     },
     __self: this
   }, "Rafa\u0142 Cie\u015Blik Portfolio"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("meta", {
@@ -1990,7 +2003,7 @@ var Index = function Index() {
     content: "initial-scale=1.0, width=device-width",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 40
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("link", {
@@ -2000,21 +2013,21 @@ var Index = function Index() {
     crossorigin: "anonymous",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40
+      lineNumber: 41
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Container__WEBPACK_IMPORTED_MODULE_5__["default"], {
     siteChange: triggerSiteChange,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 48
     },
     __self: this
   }, renderPage(), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "site-change",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 50
     },
     __self: this
   })));

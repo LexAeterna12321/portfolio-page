@@ -4,6 +4,7 @@ import Container from "../components/Container";
 import Home from "../components/Home";
 import About from "../components/About";
 import { useState } from "react";
+
 const Index = () => {
   const [state, setState] = useState({ siteActive: "about" });
 

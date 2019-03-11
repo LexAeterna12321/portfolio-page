@@ -47,12 +47,12 @@
         }
     }
 
-    // &__button {
-    //     position: relative;
-    //     z-index: 4;
-    //     margin: 5% 0;
-    //     @include buttonMixin($main-color, transparent);
-    // }
+    &__description__button {
+        position: relative;
+        z-index: 4;
+        margin: 5% 0;
+        @include buttonMixin($main-color, transparent);
+    }
 
 
     &::-webkit-scrollbar {

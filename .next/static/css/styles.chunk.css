@@ -232,6 +232,30 @@ body {
       padding-top: 0; }
     .about__basic-info li:last-child {
       border-bottom: none; }
+  .about__description__button {
+    position: relative;
+    z-index: 4;
+    margin: 5% 0;
+    color: #2d3986;
+    background-color: transparent;
+    border: 1px solid #2d3986;
+    padding: 10px 15px;
+    text-transform: uppercase;
+    cursor: pointer; }
+    .about__description__button::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 120%;
+      height: 100%;
+      background-color: #202960;
+      transform: translate(-50%, -50%) rotate(-5deg);
+      opacity: 0;
+      transition: 0.3s ease-in-out;
+      z-index: -1; }
+    .about__description__button:hover::before {
+      opacity: .7; }
   .about::-webkit-scrollbar {
     width: 5px; }
   .about::-webkit-scrollbar-thumb {
@@ -269,16 +293,18 @@ body {
   display: grid;
   justify-content: center;
   align-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
   grid-gap: 30px; }
   .education__item {
+    padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
     color: #2d3986;
-    font-weight: 700; }
+    font-weight: 700;
+    border: 1px solid #1e272e; }
     .education__item p:first-child {
       color: #1e272e; }
 

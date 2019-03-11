@@ -22,9 +22,13 @@ const About = () => {
         </li>
       </ul>
       <div className="about__description">
-        Hi There, I'm self taught web developer. I'm refactoring myself from
-        scratch. I've fallen in love with Front end world, especially javaScript
-        teamed up with React.js framework.
+        <p>
+          Hi There, I'm self taught web developer. I'm refactoring myself from
+          scratch. I've fallen in love with Front end world, especially
+          javaScript teamed up with React.js framework.
+        </p>
+
+        <button className="about__description__button">Hire Me</button>
       </div>
       <h1 className="about__h1">My skills</h1>
       <Skills />
