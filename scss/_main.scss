@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&subset=latin-ext');
 
 *,
 *::before,
@@ -9,7 +9,8 @@
 }
 
 html {
-    font-family: 'Inconsolata', monospace;
+
+    font-family: 'Raleway', sans-serif;
     font-size: 20px;
     color: $secondary-color;
 }

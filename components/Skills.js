@@ -10,6 +10,10 @@ const Skills = () => {
         <span>CSS</span>
       </div>
       <div className="icons__icon">
+        <i className="fab fa-sass" />
+        <span>Sass</span>
+      </div>
+      <div className="icons__icon">
         <i className="fab fa-js" />
         <span>JavaScript</span>
       </div>

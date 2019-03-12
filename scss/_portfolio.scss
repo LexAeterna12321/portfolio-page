@@ -1,0 +1,119 @@
+.portfolio {
+    position: relative;
+    max-width: $max-width;
+    padding: 100px 13%;
+    overflow: hidden;
+    background-color: $secondary-color;
+    color: $main-color;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    border: 15px $main-color solid;
+    overflow-y: scroll;
+
+    &__h1 {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin: 10px;
+    }
+
+    &__projects {
+        display: grid;
+        grid-gap: 50px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        justify-items: center;
+
+        &__project {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include highlight;
+
+            & img {
+                display: block;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+                height: 100%;
+                z-index: -4;
+                transition: all .6s;
+            }
+
+            &__description {
+                color: $secondary-color;
+                font-size: 1.5rem;
+                background-color: rgba(30, 39, 46, .5);
+                text-align: center;
+                padding: 20px;
+                overflow: hidden;
+
+                &--shown,
+                &--hidden {
+                    transition: all $trs-time;
+                }
+
+                &--hidden {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    opacity: 0;
+                    grid-gap: 5px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -250%);
+
+                    & a {
+                        display: block;
+                        margin: 0 20px;
+                        text-decoration: none;
+                        color: $secondary-color;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: #575fcf;
+                        }
+                    }
+                }
+
+            }
+
+            &:hover img {
+                filter: blur(2px);
+            }
+
+            &:hover &__description--shown {
+                transform: translateY(-250%);
+                opacity: 0;
+            }
+
+            &:hover &__description--hidden {
+                transform: translate(-50%, -50%);
+                opacity: 1;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width:$mobileBP) {
+    .portfolio {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        border: none;
+
+        &__projects {
+            grid-template-columns: 1fr;
+        }
+
+    }
+}

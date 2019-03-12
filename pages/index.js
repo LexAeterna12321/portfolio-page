@@ -1,12 +1,13 @@
+import { useState } from "react";
 import "../styles.scss";
 import Head from "next/head";
 import Container from "../components/Container";
 import Home from "../components/Home";
 import About from "../components/About";
-import { useState } from "react";
+import Portfolio from "../components/Portfolio";
 
 const Index = () => {
-  const [state, setState] = useState({ siteActive: "about" });
+  const [state, setState] = useState({ siteActive: "portfolio" });
 
   const triggerSiteChange = site => {
     if (site === state.siteActive) return;
@@ -28,6 +29,8 @@ const Index = () => {
         return <Home siteChange={triggerSiteChange} />;
       case "about":
         return <About siteChange={triggerSiteChange} />;
+      case "portfolio":
+        return <Portfolio siteChange={triggerSiteChange} />;
       default:
         return <Home siteChange={triggerSiteChange} />;
     }

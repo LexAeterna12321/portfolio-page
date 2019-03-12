@@ -1,8 +1,7 @@
 .about {
     position: relative;
     max-width: $max-width;
-
-    padding: 100px 70px;
+    padding: 100px 13%;
     overflow: hidden;
     background-color: $secondary-color;
     color: $main-color;
@@ -51,7 +50,7 @@
         position: relative;
         z-index: 4;
         margin: 5% 0;
-        @include buttonMixin($main-color, transparent);
+        @include buttonMixin($third-color, transparent);
     }
 
 

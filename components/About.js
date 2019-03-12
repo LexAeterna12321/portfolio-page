@@ -15,7 +15,7 @@ const About = () => {
           Age: <span>30 Years</span>
         </li>
         <li>
-          Residence:<span>Wrocław</span>
+          Residence: <span>Wrocław</span>
         </li>
         <li>
           Dream Job: <span>Tech Job</span>

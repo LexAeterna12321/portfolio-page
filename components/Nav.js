@@ -17,9 +17,7 @@ const Nav = ({ siteChange }) => {
           <a onClick={() => siteChange("about")}>About Me</a>
         </li>
         <li>
-          <Link href="./portfolio">
-            <a> Portfolio</a>
-          </Link>
+          <a onClick={() => siteChange("portfolio")}>Portfolio</a>
         </li>
         <li>
           <Link href="./contact">
