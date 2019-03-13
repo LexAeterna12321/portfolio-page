@@ -1,4 +1,5 @@
 @mixin buttonMixin($font-color, $bg-color) {
+    position: relative;
     color: $font-color;
     background-color: $bg-color;
     border: 1px solid $font-color;
@@ -22,7 +23,7 @@
         transform: translate(-50%, -50%) rotate(-5deg);
         opacity: 0;
         transition: 0.3s ease-in-out;
-        z-index: -1;
+
     }
 
 
@@ -32,6 +33,18 @@
         }
     }
 
+}
+
+@mixin styledScroll {
+    &::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $main-color;
+        ;
+        outline: 1px solid $third-color;
+    }
 }
 
 @mixin siteChangeAnim {

@@ -163,6 +163,7 @@ body {
     position: relative;
     z-index: 4;
     margin: 5% 0;
+    position: relative;
     color: #d2dae2;
     background-color: transparent;
     border: 1px solid #d2dae2;
@@ -180,8 +181,7 @@ body {
       background-color: #202960;
       transform: translate(-50%, -50%) rotate(-5deg);
       opacity: 0;
-      transition: 0.3s ease-in-out;
-      z-index: -1; }
+      transition: 0.3s ease-in-out; }
     .home__button:hover::before {
       opacity: .5; }
 
@@ -213,6 +213,11 @@ body {
   border: 15px #2d3986 solid;
   overflow-y: scroll;
   grid-template-columns: repeat(2, 1fr); }
+  .about::-webkit-scrollbar {
+    width: 5px; }
+  .about::-webkit-scrollbar-thumb {
+    background-color: #2d3986;
+    outline: 1px solid #1e272e; }
   .about__h1 {
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -237,6 +242,7 @@ body {
     position: relative;
     z-index: 4;
     margin: 5% 0;
+    position: relative;
     color: #1e272e;
     background-color: transparent;
     border: 1px solid #1e272e;
@@ -254,15 +260,9 @@ body {
       background-color: #202960;
       transform: translate(-50%, -50%) rotate(-5deg);
       opacity: 0;
-      transition: 0.3s ease-in-out;
-      z-index: -1; }
+      transition: 0.3s ease-in-out; }
     .about__description__button:hover::before {
       opacity: .5; }
-  .about::-webkit-scrollbar {
-    width: 5px; }
-  .about::-webkit-scrollbar-thumb {
-    background-color: #2d3986;
-    outline: 1px solid #1e272e; }
 
 @media screen and (max-width: 760px) {
   .about {
@@ -350,8 +350,7 @@ body {
         background-color: #202960;
         transform: translate(-50%, -50%) rotate(-5deg);
         opacity: 0;
-        transition: 0.3s ease-in-out;
-        z-index: -1; }
+        transition: 0.3s ease-in-out; }
       .portfolio__projects__project:hover::before {
         opacity: .5; }
       .portfolio__projects__project img {
@@ -421,20 +420,79 @@ body {
   width: 100%;
   z-index: 1;
   border: 15px #2d3986 solid;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  display: grid;
+  grid-template-columns: 1fr 1fr 30%;
+  grid-gap: 15px; }
+  .contact::-webkit-scrollbar {
+    width: 5px; }
+  .contact::-webkit-scrollbar-thumb {
+    background-color: #2d3986;
+    outline: 1px solid #1e272e; }
   .contact__h1 {
     font-size: 1.5rem;
     text-transform: uppercase;
-    margin: 10px; }
+    margin: 10px;
+    grid-column: span 2; }
+  .contact__form {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    grid-gap: 20px;
+    align-items: center;
+    position: relative; }
+    .contact__form input,
+    .contact__form textarea {
+      padding: 20px;
+      background-color: transparent;
+      border: 1px solid #2d3986;
+      color: #2d3986; }
+    .contact__form input[name=subject],
+    .contact__form textarea {
+      grid-column: 1/-1; }
+    .contact__form button {
+      position: relative;
+      color: #2d3986;
+      background-color: #d2dae2;
+      border: 1px solid #2d3986;
+      padding: 10px 15px;
+      text-transform: uppercase;
+      cursor: pointer;
+      outline: none; }
+      .contact__form button::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 150%;
+        height: 110%;
+        background-color: #202960;
+        transform: translate(-50%, -50%) rotate(-5deg);
+        opacity: 0;
+        transition: 0.3s ease-in-out; }
+      .contact__form button:hover::before {
+        opacity: .5; }
+  .contact__info {
+    font-size: 1.4rem;
+    align-self: center;
+    justify-self: center;
+    grid-row: span 2; }
+    .contact__info__city, .contact__info__phone {
+      margin: 40px 0; }
+      .contact__info__city i, .contact__info__phone i {
+        padding: 0 5px; }
 
 @media screen and (max-width: 760px) {
   .contact {
+    grid-template-columns: 1fr;
     position: fixed;
     top: 0;
     left: 0;
     height: 100vh;
     width: 100vw;
-    border: none; } }
+    border: none; }
+    .contact__form {
+      grid-template-columns: 1fr; } }
 
 
 /*# sourceMappingURL=styles.chunk.css.map*/

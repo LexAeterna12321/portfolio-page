@@ -13,6 +13,7 @@
     border: 15px $main-color solid;
     overflow-y: scroll;
     grid-template-columns: repeat(2, 1fr);
+    @include styledScroll;
 
     &__h1 {
         font-size: 1.5rem;
@@ -53,16 +54,6 @@
         @include buttonMixin($third-color, transparent);
     }
 
-
-    &::-webkit-scrollbar {
-        width: 5px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-        background-color: $main-color;
-        ;
-        outline: 1px solid $third-color;
-    }
 }
 
 @media screen and (max-width:$mobileBP) {

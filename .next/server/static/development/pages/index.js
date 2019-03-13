@@ -260,7 +260,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _Form__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Form */ "./components/Form.js");
+/* harmony import */ var _ContactInfo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ContactInfo */ "./components/ContactInfo.js");
 
 
 
@@ -292,33 +292,173 @@ var Contact = function Contact() {
     console.log(state);
   };
 
+  var name = state.name,
+      email = state.email,
+      subject = state.subject,
+      message = state.message;
   return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
     className: "contact",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 21
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("h1", {
     className: "contact__h1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
-    },
-    __self: this
-  }, "Contact Me"), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_Form__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    messageData: Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, state),
-    handleChange: handleChange,
-    handleSubmit: handleSubmit,
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 22
     },
     __self: this
-  }));
+  }, "Contact Me"), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_ContactInfo__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("form", {
+    className: "contact__form",
+    onSubmit: function onSubmit(e) {
+      return handleSubmit(e);
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("input", {
+    onChange: function onChange(e) {
+      return handleChange(e);
+    },
+    type: "text",
+    name: "name",
+    placeholder: "Name",
+    value: name,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("input", {
+    onChange: function onChange(e) {
+      return handleChange(e);
+    },
+    type: "email",
+    name: "email",
+    placeholder: "Email",
+    value: email,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("input", {
+    onChange: function onChange(e) {
+      return handleChange(e);
+    },
+    type: "text",
+    name: "subject",
+    placeholder: "subject",
+    value: subject,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("textarea", {
+    onChange: function onChange(e) {
+      return handleChange(e);
+    },
+    name: "message",
+    cols: "30",
+    rows: "10",
+    placeholder: "Message",
+    value: message,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
+    type: "submit",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54
+    },
+    __self: this
+  }, "Send Message")));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Contact);
+
+/***/ }),
+
+/***/ "./components/ContactInfo.js":
+/*!***********************************!*\
+  !*** ./components/ContactInfo.js ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\react\\nextPortfolio\\portfolio-page\\components\\ContactInfo.js";
+
+
+var ContactInfo = function ContactInfo() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "contact__info",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 3
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "contact__info__city",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fas fa-map-marker-alt",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }, "Wroc\u0142aw")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "contact__info__phone",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fas fa-phone",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
+  }, "781 139 442")));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (ContactInfo);
 
 /***/ }),
 
@@ -464,103 +604,6 @@ var Education = function Education() {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Education);
-
-/***/ }),
-
-/***/ "./components/Form.js":
-/*!****************************!*\
-  !*** ./components/Form.js ***!
-  \****************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\react\\nextPortfolio\\portfolio-page\\components\\Form.js";
-
-
-var Form = function Form(_ref) {
-  var name = _ref.name,
-      email = _ref.email,
-      subject = _ref.subject,
-      message = _ref.message,
-      handleSubmit = _ref.handleSubmit,
-      handleChange = _ref.handleChange;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-    onSubmit: function onSubmit(e) {
-      return handleSubmit(e);
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    onChange: function onChange(e) {
-      return handleChange(e);
-    },
-    type: "text",
-    name: "name",
-    placeholder: "Name",
-    value: name,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    onChange: function onChange(e) {
-      return handleChange(e);
-    },
-    type: "email",
-    name: "email",
-    placeholder: "Email",
-    value: email,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 18
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    onChange: function onChange(e) {
-      return handleChange(e);
-    },
-    type: "text",
-    name: "subject",
-    placeholder: "subject",
-    value: subject,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 25
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("textarea", {
-    onChange: function onChange(e) {
-      return handleChange(e);
-    },
-    name: "message",
-    cols: "30",
-    rows: "10",
-    placeholder: "Message",
-    value: message,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 32
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
-    type: "submit",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 40
-    },
-    __self: this
-  }, "Send Message"));
-};
-
-/* harmony default export */ __webpack_exports__["default"] = (Form);
 
 /***/ }),
 

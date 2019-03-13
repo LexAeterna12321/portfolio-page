@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Form from "./Form";
+import ContactInfo from "./ContactInfo";
 const initialState = { name: "", email: "", subject: "", message: "" };
 
 const Contact = () => {
@@ -16,14 +16,43 @@ const Contact = () => {
     console.log(state);
   };
 
+  const { name, email, subject, message } = state;
   return (
     <div className="contact">
       <h1 className="contact__h1">Contact Me</h1>
-      <Form
-        messageData={{ ...state }}
-        handleChange={handleChange}
-        handleSubmit={handleSubmit}
-      />
+      <ContactInfo />
+      <form className="contact__form" onSubmit={e => handleSubmit(e)}>
+        <input
+          onChange={e => handleChange(e)}
+          type="text"
+          name="name"
+          placeholder="Name"
+          value={name}
+        />
+        <input
+          onChange={e => handleChange(e)}
+          type="email"
+          name="email"
+          placeholder="Email"
+          value={email}
+        />
+        <input
+          onChange={e => handleChange(e)}
+          type="text"
+          name="subject"
+          placeholder="subject"
+          value={subject}
+        />
+        <textarea
+          onChange={e => handleChange(e)}
+          name="message"
+          cols="30"
+          rows="10"
+          placeholder="Message"
+          value={message}
+        />
+        <button type="submit">Send Message</button>
+      </form>
     </div>
   );
 };

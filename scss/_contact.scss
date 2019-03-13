@@ -10,17 +10,66 @@
     z-index: 1;
     border: 15px $main-color solid;
     overflow-y: scroll;
+    display: grid;
+    grid-template-columns: 1fr 1fr 30%;
+    grid-gap: 15px;
+    @include styledScroll;
 
     &__h1 {
         font-size: 1.5rem;
         text-transform: uppercase;
         margin: 10px;
+        grid-column: span 2;
     }
 
+    &__form {
+        grid-column: span 2;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+        grid-gap: 20px;
+        align-items: center;
+        position: relative;
+
+
+        & input,
+        & textarea {
+            padding: 20px;
+            background-color: transparent;
+            border: 1px solid $main-color;
+            color: $main-color;
+        }
+
+        & input[name=subject],
+        & textarea {
+            grid-column: 1/-1;
+        }
+
+        & button {
+            @include buttonMixin($main-color, $secondary-color);
+        }
+    }
+
+    &__info {
+        font-size: 1.4rem;
+        align-self: center;
+        justify-self: center;
+        grid-row: span 2;
+
+
+        &__city,
+        &__phone {
+            margin: 40px 0;
+
+            & i {
+                padding: 0 5px;
+            }
+        }
+    }
 }
 
 @media screen and (max-width:$mobileBP) {
     .contact {
+        grid-template-columns: 1fr;
         position: fixed;
         top: 0;
         left: 0;
@@ -28,5 +77,8 @@
         width: 100vw;
         border: none;
 
+        &__form {
+            grid-template-columns: 1fr;
+        }
     }
 }
