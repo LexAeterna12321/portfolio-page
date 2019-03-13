@@ -5,9 +5,10 @@ import Container from "../components/Container";
 import Home from "../components/Home";
 import About from "../components/About";
 import Portfolio from "../components/Portfolio";
+import Contact from "../components/Contact";
 
 const Index = () => {
-  const [state, setState] = useState({ siteActive: "portfolio" });
+  const [state, setState] = useState({ siteActive: "contact" });
 
   const triggerSiteChange = site => {
     if (site === state.siteActive) return;
@@ -31,6 +32,8 @@ const Index = () => {
         return <About siteChange={triggerSiteChange} />;
       case "portfolio":
         return <Portfolio siteChange={triggerSiteChange} />;
+      case "contact":
+        return <Contact siteChange={triggerSiteChange} />;
       default:
         return <Home siteChange={triggerSiteChange} />;
     }

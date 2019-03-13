@@ -1,0 +1,32 @@
+.contact {
+    position: relative;
+    max-width: $max-width;
+    padding: 100px 13%;
+    overflow: hidden;
+    background-color: $secondary-color;
+    color: $main-color;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    border: 15px $main-color solid;
+    overflow-y: scroll;
+
+    &__h1 {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        margin: 10px;
+    }
+
+}
+
+@media screen and (max-width:$mobileBP) {
+    .contact {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        border: none;
+
+    }
+}

@@ -410,5 +410,31 @@ body {
     .portfolio__projects {
       grid-template-columns: 1fr; } }
 
+.contact {
+  position: relative;
+  max-width: 1480px;
+  padding: 100px 13%;
+  overflow: hidden;
+  background-color: #d2dae2;
+  color: #2d3986;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  border: 15px #2d3986 solid;
+  overflow-y: scroll; }
+  .contact__h1 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 10px; }
+
+@media screen and (max-width: 760px) {
+  .contact {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    border: none; } }
+
 
 /*# sourceMappingURL=styles.chunk.css.map*/

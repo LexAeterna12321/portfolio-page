@@ -1,6 +1,3 @@
-import React from "react";
-import Link from "next/link";
-
 const Nav = ({ siteChange }) => {
   return (
     <nav className="nav">
@@ -20,9 +17,7 @@ const Nav = ({ siteChange }) => {
           <a onClick={() => siteChange("portfolio")}>Portfolio</a>
         </li>
         <li>
-          <Link href="./contact">
-            <a>Contact</a>
-          </Link>
+          <a onClick={() => siteChange("contact")}>Contact</a>
         </li>
       </ul>
     </nav>
