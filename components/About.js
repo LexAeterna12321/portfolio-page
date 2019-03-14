@@ -1,6 +1,6 @@
 import Skills from "./Skills";
 import Education from "./Education";
-const About = () => {
+const About = ({ siteChange }) => {
   return (
     <div className="about">
       <h1 className="about__h1">I'm a novice programmer</h1>
@@ -28,7 +28,12 @@ const About = () => {
           javaScript teamed up with React.js framework.
         </p>
 
-        <button className="about__description__button">Hire Me</button>
+        <button
+          className="about__description__button"
+          onClick={() => siteChange("contact")}
+        >
+          Hire Me
+        </button>
       </div>
       <h1 className="about__h1">My skills</h1>
       <Skills />

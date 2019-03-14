@@ -4564,7 +4564,7 @@ module.exports = (__webpack_require__(/*! dll-reference dll_2c2a52d81d538322a0ca
 
 /***/ }),
 
-/***/ 4:
+/***/ 1:
 /*!**********************************************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F_error&absolutePagePath=C%3A%5CUsers%5Crafal%5CDesktop%5Cprojekty%5Creact%5CnextPortfolio%5Cportfolio-page%5Cnode_modules%5Cnext%5Cdist%5Cpages%5C_error.js ***!
   \**********************************************************************************************************************************************************************************************************/
@@ -4587,5 +4587,5 @@ module.exports = dll_2c2a52d81d538322a0ca;
 
 /***/ })
 
-},[[4,"static/runtime/webpack.js"]]]));;
+},[[1,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=_error.js.map

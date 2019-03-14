@@ -10,6 +10,7 @@
     z-index: 1;
     border: 15px $main-color solid;
     overflow-y: scroll;
+    @include styledScroll;
 
     &__h1 {
         font-size: 1.5rem;

@@ -184,6 +184,14 @@ body {
       transition: 0.3s ease-in-out; }
     .home__button:hover::before {
       opacity: .5; }
+  .home__socials__a {
+    text-decoration: none;
+    color: #d2dae2;
+    font-size: 2rem;
+    margin: 0 20px;
+    transition: 0.2s; }
+    .home__socials__a:hover {
+      color: #1e272e; }
 
 @media screen and (max-width: 760px) {
   .home {
@@ -322,6 +330,11 @@ body {
   z-index: 1;
   border: 15px #2d3986 solid;
   overflow-y: scroll; }
+  .portfolio::-webkit-scrollbar {
+    width: 5px; }
+  .portfolio::-webkit-scrollbar-thumb {
+    background-color: #2d3986;
+    outline: 1px solid #1e272e; }
   .portfolio__h1 {
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -447,7 +460,7 @@ body {
       background-color: transparent;
       border: 1px solid #2d3986;
       color: #2d3986; }
-    .contact__form input[name=subject],
+    .contact__form input[name="subject"],
     .contact__form textarea {
       grid-column: 1/-1; }
     .contact__form button {
@@ -477,10 +490,18 @@ body {
     align-self: center;
     justify-self: center;
     grid-row: span 2; }
-    .contact__info__city, .contact__info__phone {
+    .contact__info__city, .contact__info__phone, .contact__info__git, .contact__info__linkedin {
       margin: 40px 0; }
-      .contact__info__city i, .contact__info__phone i {
+      .contact__info__city i, .contact__info__phone i, .contact__info__git i, .contact__info__linkedin i {
         padding: 0 5px; }
+      .contact__info__city a, .contact__info__phone a, .contact__info__git a, .contact__info__linkedin a {
+        display: block;
+        text-decoration: none;
+        color: #2d3986;
+        cursor: pointer;
+        transition: 0.2s; }
+        .contact__info__city a:hover, .contact__info__phone a:hover, .contact__info__git a:hover, .contact__info__linkedin a:hover {
+          color: #1e272e; }
 
 @media screen and (max-width: 760px) {
   .contact {

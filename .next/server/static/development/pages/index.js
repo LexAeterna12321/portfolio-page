@@ -111,7 +111,8 @@ var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\react\\nextPortfolio\\p
 
 
 
-var About = function About() {
+var About = function About(_ref) {
+  var siteChange = _ref.siteChange;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "about",
     __source: {
@@ -208,6 +209,9 @@ var About = function About() {
     __self: this
   }, "Hi There, I'm self taught web developer. I'm refactoring myself from scratch. I've fallen in love with Front end world, especially javaScript teamed up with React.js framework."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "about__description__button",
+    onClick: function onClick() {
+      return siteChange("contact");
+    },
     __source: {
       fileName: _jsxFileName,
       lineNumber: 31
@@ -217,26 +221,26 @@ var About = function About() {
     className: "about__h1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 38
     },
     __self: this
   }, "My skills"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Skills__WEBPACK_IMPORTED_MODULE_1__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 39
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: "about__h1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 40
     },
     __self: this
   }, "My education"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Education__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 41
     },
     __self: this
   }));
@@ -255,12 +259,15 @@ var About = function About() {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _ContactInfo__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ContactInfo */ "./components/ContactInfo.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/values */ "./node_modules/@babel/runtime-corejs2/core-js/object/values.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _ContactInfo__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ContactInfo */ "./components/ContactInfo.js");
+
 
 
 
@@ -276,59 +283,86 @@ var initialState = {
 };
 
 var Contact = function Contact() {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_3__["useState"])(initialState),
-      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_2__["default"])(_useState, 2),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_4__["useState"])(initialState),
+      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_3__["default"])(_useState, 2),
       state = _useState2[0],
       setState = _useState2[1];
 
-  var handleChange = function handleChange(e) {
-    setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, state, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({}, e.target.name, e.target.value)));
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_4__["useState"])(""),
+      _useState4 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_3__["default"])(_useState3, 2),
+      validationStatus = _useState4[0],
+      setValidationStatus = _useState4[1];
+
+  var handleInputChange = function handleInputChange(e) {
+    setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_2__["default"])({}, state, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])({}, e.target.name, e.target.value)));
+  };
+
+  var handleValidation = function handleValidation(e) {
+    var invalidItem = e.target.placeholder;
+
+    if (e.target.value.trim() === "") {
+      setValidationStatus("Pole ".concat(invalidItem, " nie mo\u017Ce by\u0107 puste."));
+    } else {
+      setValidationStatus("");
+    }
   };
 
   var handleSubmit = function handleSubmit(e) {
     e.preventDefault();
-    console.log("submit");
-    setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, state, initialState));
-    console.log(state);
+
+    var fieldsValues = _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_0___default()(state);
+
+    var validationItems = fieldsValues.filter(function (field) {
+      return field === "";
+    });
+
+    if (validationItems.length !== 0) {
+      setValidationStatus("Wszystkie pola muszą być wypełnione.");
+    } else {
+      setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_2__["default"])({}, state, initialState));
+    }
   };
 
   var name = state.name,
       email = state.email,
       subject = state.subject,
       message = state.message;
-  return react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("div", {
+  return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: "contact",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 35
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("h1", {
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("h1", {
     className: "contact__h1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 22
+      lineNumber: 36
     },
     __self: this
-  }, "Contact Me"), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement(_ContactInfo__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, "Contact Me"), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_ContactInfo__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 37
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("form", {
+  }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("form", {
     className: "contact__form",
     onSubmit: function onSubmit(e) {
       return handleSubmit(e);
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 38
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("input", {
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("input", {
     onChange: function onChange(e) {
-      return handleChange(e);
+      return handleInputChange(e);
+    },
+    onBlur: function onBlur(e) {
+      return handleValidation(e);
     },
     type: "text",
     name: "name",
@@ -336,12 +370,15 @@ var Contact = function Contact() {
     value: name,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 39
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("input", {
+  }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("input", {
     onChange: function onChange(e) {
-      return handleChange(e);
+      return handleInputChange(e);
+    },
+    onBlur: function onBlur(e) {
+      return handleValidation(e);
     },
     type: "email",
     name: "email",
@@ -349,12 +386,15 @@ var Contact = function Contact() {
     value: email,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 47
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("input", {
+  }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("input", {
     onChange: function onChange(e) {
-      return handleChange(e);
+      return handleInputChange(e);
+    },
+    onBlur: function onBlur(e) {
+      return handleValidation(e);
     },
     type: "text",
     name: "subject",
@@ -362,12 +402,15 @@ var Contact = function Contact() {
     value: subject,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 55
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("textarea", {
+  }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("textarea", {
     onChange: function onChange(e) {
-      return handleChange(e);
+      return handleInputChange(e);
+    },
+    onBlur: function onBlur(e) {
+      return handleValidation(e);
     },
     name: "message",
     cols: "30",
@@ -376,14 +419,27 @@ var Contact = function Contact() {
     value: message,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 63
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_3___default.a.createElement("button", {
+  }), validationStatus ? react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("p", {
+    className: "contact__form__validationStatus",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73
+    },
+    __self: this
+  }, validationStatus) : react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("p", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 75
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("button", {
     type: "submit",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 77
     },
     __self: this
   }, "Send Message")));
@@ -408,7 +464,7 @@ var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\react\\nextPortfolio\\p
 
 
 var ContactInfo = function ContactInfo() {
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("aside", {
     className: "contact__info",
     __source: {
       fileName: _jsxFileName,
@@ -442,20 +498,84 @@ var ContactInfo = function ContactInfo() {
       lineNumber: 8
     },
     __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "tel:781-139-442",
+    target: "_blank",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fas fa-phone",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 10
     },
     __self: this
   }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 10
     },
     __self: this
-  }, "781 139 442")));
+  }, "781 139 442"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "contact__info__git",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://github.com/LexAeterna12321",
+    target: "_blank",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fab fa-github",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
+  }, "Github"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "contact__info__linkedin",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 18
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://www.linkedin.com/in/rafa%C5%82-cie%C5%9Blik-81038b130/",
+    target: "_blank",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fab fa-linkedin-in",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  }, "LinkedIn"))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (ContactInfo);
@@ -654,7 +774,46 @@ var Home = function Home(_ref) {
       lineNumber: 8
     },
     __self: this
-  }, "Discover More"));
+  }, "Discover More"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "home__socials",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "home__socials__a",
+    href: "https://github.com/LexAeterna12321",
+    target: "_blank",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fab fa-github-square",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "home__socials__a",
+    href: "https://www.linkedin.com/in/rafa%C5%82-cie%C5%9Blik-81038b130/",
+    target: "_blank",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
+    className: "fab fa-linkedin",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24
+    },
+    __self: this
+  }))));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
@@ -1139,6 +1298,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/keys */ "core
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/values.js":
+/*!**********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/values.js ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/values */ "core-js/library/fn/object/values");
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/arrayWithHoles.js":
 /*!***************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/arrayWithHoles.js ***!
@@ -1347,7 +1517,7 @@ var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\react\\nextPortfolio\\p
 
 var Index = function Index() {
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])({
-    siteActive: "contact"
+    siteActive: "/"
   }),
       _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_useState, 2),
       state = _useState2[0],
@@ -1565,6 +1735,17 @@ module.exports = require("core-js/library/fn/object/get-own-property-symbols");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/object/keys");
+
+/***/ }),
+
+/***/ "core-js/library/fn/object/values":
+/*!***************************************************!*\
+  !*** external "core-js/library/fn/object/values" ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/values");
 
 /***/ }),
 

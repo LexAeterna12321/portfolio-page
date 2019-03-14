@@ -8,7 +8,7 @@ import Portfolio from "../components/Portfolio";
 import Contact from "../components/Contact";
 
 const Index = () => {
-  const [state, setState] = useState({ siteActive: "contact" });
+  const [state, setState] = useState({ siteActive: "/" });
 
   const triggerSiteChange = site => {
     if (site === state.siteActive) return;

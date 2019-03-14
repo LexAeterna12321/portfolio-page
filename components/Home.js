@@ -8,6 +8,22 @@ const Home = ({ siteChange }) => {
       <button className="home__button" onClick={() => siteChange("about")}>
         Discover More
       </button>
+      <div className="home__socials">
+        <a
+          className="home__socials__a"
+          href="https://github.com/LexAeterna12321"
+          target="_blank"
+        >
+          <i className="fab fa-github-square" />
+        </a>
+        <a
+          className="home__socials__a"
+          href="https://www.linkedin.com/in/rafa%C5%82-cie%C5%9Blik-81038b130/"
+          target="_blank"
+        >
+          <i className="fab fa-linkedin" />
+        </a>
+      </div>
     </div>
   );
 };

@@ -30,7 +30,6 @@
         align-items: center;
         position: relative;
 
-
         & input,
         & textarea {
             padding: 20px;
@@ -39,7 +38,7 @@
             color: $main-color;
         }
 
-        & input[name=subject],
+        & input[name="subject"],
         & textarea {
             grid-column: 1/-1;
         }
@@ -55,19 +54,32 @@
         justify-self: center;
         grid-row: span 2;
 
-
         &__city,
-        &__phone {
+        &__phone,
+        &__git,
+        &__linkedin {
             margin: 40px 0;
 
             & i {
                 padding: 0 5px;
             }
+
+            & a {
+                display: block;
+                text-decoration: none;
+                color: $main-color;
+                cursor: pointer;
+                transition: 0.2s;
+
+                &:hover {
+                    color: $third-color;
+                }
+            }
         }
     }
 }
 
-@media screen and (max-width:$mobileBP) {
+@media screen and (max-width: $mobileBP) {
     .contact {
         grid-template-columns: 1fr;
         position: fixed;
