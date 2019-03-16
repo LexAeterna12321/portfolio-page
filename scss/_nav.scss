@@ -20,20 +20,26 @@
         font-size: 1.3rem;
         font-weight: bold;
 
-        & li {
+        &__li {
             margin: 30px 0;
             text-transform: uppercase;
 
-            & a {
+            &__a {
                 text-decoration: none;
                 color: grey;
+                cursor: pointer;
+
+                &--disabled {
+                    pointer-events: none;
+                }
             }
+
+
         }
 
         & li:hover a {
             transition: all $trs-time;
             color: white;
-            cursor: pointer;
         }
     }
 
@@ -57,7 +63,6 @@
     height: 40px;
     z-index: 3;
     cursor: pointer;
-
 
     & span {
         width: 100%;

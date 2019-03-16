@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ContactInfo from "./ContactInfo";
 const initialState = { name: "", email: "", subject: "", message: "" };
+import "isomorphic-fetch";
 
 const Contact = () => {
   const [state, setState] = useState(initialState);
@@ -13,7 +14,7 @@ const Contact = () => {
   const handleValidation = e => {
     const invalidItem = e.target.placeholder;
     if (e.target.value.trim() === "") {
-      setValidationStatus(`Pole ${invalidItem} nie może być puste.`);
+      setValidationStatus(`Field ${invalidItem} cannot be empty.`);
     } else {
       setValidationStatus("");
     }
@@ -21,12 +22,27 @@ const Contact = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
+
     const fieldsValues = Object.values(state);
     const validationItems = fieldsValues.filter(field => field === "");
     if (validationItems.length !== 0) {
-      setValidationStatus("Wszystkie pola muszą być wypełnione.");
+      setValidationStatus("All fields must be filled.");
     } else {
       setState({ ...state, ...initialState });
+
+      setValidationStatus(
+        `Thank you for your message. I hope we keep in touch. ;)`
+      );
+      fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          Accept: "application/json, text/plain, */*",
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(state)
+      }).then(res => {
+        res.status === 200 ? setState({ ...state, submitted: true }) : "";
+      });
     }
   };
 
@@ -57,7 +73,7 @@ const Contact = () => {
           onBlur={e => handleValidation(e)}
           type="text"
           name="subject"
-          placeholder="subject"
+          placeholder="Subject"
           value={subject}
         />
         <textarea

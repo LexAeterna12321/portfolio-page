@@ -13,13 +13,18 @@ const Index = () => {
   const triggerSiteChange = site => {
     if (site === state.siteActive) return;
     const changer = document.querySelector(".site-change");
+    const links = document.querySelectorAll(".nav__ul__li__a");
     changer.classList.add("site-change--active");
+    links.forEach(link => link.classList.add("nav__ul__li__a--disabled"));
 
     setTimeout(() => {
       setState({ ...state, siteActive: site });
 
       setTimeout(() => {
         changer.classList.remove("site-change--active");
+        links.forEach(link =>
+          link.classList.remove("nav__ul__li__a--disabled")
+        );
       }, 750);
     }, 1000);
   };

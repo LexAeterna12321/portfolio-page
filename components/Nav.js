@@ -7,17 +7,25 @@ const Nav = ({ siteChange }) => {
         <span />
       </div>
       <ul className="nav__ul">
-        <li>
-          <a onClick={() => siteChange("/")}>Home</a>
+        <li className="nav__ul__li">
+          <a className="nav__ul__li__a" onClick={() => siteChange("/")}>
+            Home
+          </a>
         </li>
-        <li>
-          <a onClick={() => siteChange("about")}>About Me</a>
+        <li className="nav__ul__li">
+          <a className="nav__ul__li__a" onClick={() => siteChange("about")}>
+            About Me
+          </a>
         </li>
-        <li>
-          <a onClick={() => siteChange("portfolio")}>Portfolio</a>
+        <li className="nav__ul__li">
+          <a className="nav__ul__li__a" onClick={() => siteChange("portfolio")}>
+            Portfolio
+          </a>
         </li>
-        <li>
-          <a onClick={() => siteChange("contact")}>Contact</a>
+        <li className="nav__ul__li">
+          <a className="nav__ul__li__a" onClick={() => siteChange("contact")}>
+            Contact
+          </a>
         </li>
       </ul>
     </nav>

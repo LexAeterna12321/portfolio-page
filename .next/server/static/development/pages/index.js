@@ -259,19 +259,23 @@ var About = function About(_ref) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/values */ "./node_modules/@babel/runtime-corejs2/core-js/object/values.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _ContactInfo__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ContactInfo */ "./components/ContactInfo.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/json/stringify */ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/values */ "./node_modules/@babel/runtime-corejs2/core-js/object/values.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _ContactInfo__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ContactInfo */ "./components/ContactInfo.js");
+/* harmony import */ var isomorphic_fetch__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! isomorphic-fetch */ "isomorphic-fetch");
+/* harmony import */ var isomorphic_fetch__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(isomorphic_fetch__WEBPACK_IMPORTED_MODULE_7__);
 
 
 
 
-var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\react\\nextPortfolio\\portfolio-page\\components\\Contact.js";
+
 
 
 
@@ -282,26 +286,27 @@ var initialState = {
   message: ""
 };
 
+
 var Contact = function Contact() {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_4__["useState"])(initialState),
-      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_3__["default"])(_useState, 2),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_5__["useState"])(initialState),
+      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_4__["default"])(_useState, 2),
       state = _useState2[0],
       setState = _useState2[1];
 
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_4__["useState"])(""),
-      _useState4 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_3__["default"])(_useState3, 2),
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_5__["useState"])(""),
+      _useState4 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_4__["default"])(_useState3, 2),
       validationStatus = _useState4[0],
       setValidationStatus = _useState4[1];
 
   var handleInputChange = function handleInputChange(e) {
-    setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_2__["default"])({}, state, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])({}, e.target.name, e.target.value)));
+    setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_3__["default"])({}, state, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])({}, e.target.name, e.target.value)));
   };
 
   var handleValidation = function handleValidation(e) {
     var invalidItem = e.target.placeholder;
 
     if (e.target.value.trim() === "") {
-      setValidationStatus("Pole ".concat(invalidItem, " nie mo\u017Ce by\u0107 puste."));
+      setValidationStatus("Field ".concat(invalidItem, " cannot be empty."));
     } else {
       setValidationStatus("");
     }
@@ -310,16 +315,29 @@ var Contact = function Contact() {
   var handleSubmit = function handleSubmit(e) {
     e.preventDefault();
 
-    var fieldsValues = _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_0___default()(state);
+    var fieldsValues = _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_1___default()(state);
 
     var validationItems = fieldsValues.filter(function (field) {
       return field === "";
     });
 
     if (validationItems.length !== 0) {
-      setValidationStatus("Wszystkie pola muszą być wypełnione.");
+      setValidationStatus("All fields must be filled.");
     } else {
-      setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_2__["default"])({}, state, initialState));
+      setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_3__["default"])({}, state, initialState));
+      setValidationStatus("Thank you for your message. I hope we keep in touch. ;)");
+      fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          Accept: "application/json, text/plain, */*",
+          "Content-Type": "application/json"
+        },
+        body: _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(state)
+      }).then(function (res) {
+        res.status === 200 ? setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_3__["default"])({}, state, {
+          submitted: true
+        })) : "";
+      });
     }
   };
 
@@ -327,37 +345,16 @@ var Contact = function Contact() {
       email = state.email,
       subject = state.subject,
       message = state.message;
-  return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
-    className: "contact",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 35
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("h1", {
-    className: "contact__h1",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 36
-    },
-    __self: this
-  }, "Contact Me"), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_ContactInfo__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 37
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("form", {
+  return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+    className: "contact"
+  }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h1", {
+    className: "contact__h1"
+  }, "Contact Me"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_ContactInfo__WEBPACK_IMPORTED_MODULE_6__["default"], null), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("form", {
     className: "contact__form",
     onSubmit: function onSubmit(e) {
       return handleSubmit(e);
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 38
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("input", {
+    }
+  }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("input", {
     onChange: function onChange(e) {
       return handleInputChange(e);
     },
@@ -367,13 +364,8 @@ var Contact = function Contact() {
     type: "text",
     name: "name",
     placeholder: "Name",
-    value: name,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 39
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("input", {
+    value: name
+  }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("input", {
     onChange: function onChange(e) {
       return handleInputChange(e);
     },
@@ -383,13 +375,8 @@ var Contact = function Contact() {
     type: "email",
     name: "email",
     placeholder: "Email",
-    value: email,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("input", {
+    value: email
+  }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("input", {
     onChange: function onChange(e) {
       return handleInputChange(e);
     },
@@ -398,14 +385,9 @@ var Contact = function Contact() {
     },
     type: "text",
     name: "subject",
-    placeholder: "subject",
-    value: subject,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 55
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("textarea", {
+    placeholder: "Subject",
+    value: subject
+  }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("textarea", {
     onChange: function onChange(e) {
       return handleInputChange(e);
     },
@@ -416,32 +398,11 @@ var Contact = function Contact() {
     cols: "30",
     rows: "10",
     placeholder: "Message",
-    value: message,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 63
-    },
-    __self: this
-  }), validationStatus ? react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("p", {
-    className: "contact__form__validationStatus",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73
-    },
-    __self: this
-  }, validationStatus) : react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("p", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 75
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("button", {
-    type: "submit",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 77
-    },
-    __self: this
+    value: message
+  }), validationStatus ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+    className: "contact__form__validationStatus"
+  }, validationStatus) : react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", null), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("button", {
+    type: "submit"
   }, "Send Message")));
 };
 
@@ -831,110 +792,44 @@ var Home = function Home(_ref) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\react\\nextPortfolio\\portfolio-page\\components\\Nav.js";
 
 
 var Nav = function Nav(_ref) {
   var siteChange = _ref.siteChange;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
-    className: "nav",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 3
-    },
-    __self: this
+    className: "nav"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "hamburger",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-    className: "nav__ul",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
+    className: "hamburger"
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    className: "nav__ul"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
+    className: "nav__ul__li"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "nav__ul__li__a",
     onClick: function onClick() {
       return siteChange("/");
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
+    }
   }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 13
-    },
-    __self: this
+    className: "nav__ul__li"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "nav__ul__li__a",
     onClick: function onClick() {
       return siteChange("about");
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 14
-    },
-    __self: this
+    }
   }, "About Me")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
+    className: "nav__ul__li"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "nav__ul__li__a",
     onClick: function onClick() {
       return siteChange("portfolio");
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 17
-    },
-    __self: this
+    }
   }, "Portfolio")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 19
-    },
-    __self: this
+    className: "nav__ul__li"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    className: "nav__ul__li__a",
     onClick: function onClick() {
       return siteChange("contact");
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 20
-    },
-    __self: this
+    }
   }, "Contact"))));
 };
 
@@ -1038,7 +933,6 @@ var Portfolio = function Portfolio() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\react\\nextPortfolio\\portfolio-page\\components\\Project.js";
 
 
 var Project = function Project(_ref) {
@@ -1047,55 +941,22 @@ var Project = function Project(_ref) {
       live = _ref.live,
       git = _ref.git;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "portfolio__projects__project",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 3
-    },
-    __self: this
+    className: "portfolio__projects__project"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "/static/".concat(img),
-    alt: "".concat(name, " Project"),
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
+    alt: "".concat(name, " Project")
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "portfolio__projects__project__description",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
+    className: "portfolio__projects__project__description"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "portfolio__projects__project__description--shown",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
+    className: "portfolio__projects__project__description--shown"
   }, name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "portfolio__projects__project__description--hidden",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
+    className: "portfolio__projects__project__description--hidden"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: live,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
+    target: "_blank",
+    href: live
   }, "Live"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: git,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
+    target: "_blank",
+    href: git
   }, "Github"))));
 };
 
@@ -1251,6 +1112,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/array/is-array */ "c
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/get-iterator */ "core-js/library/fn/get-iterator");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/json/stringify */ "core-js/library/fn/json/stringify");
 
 /***/ }),
 
@@ -1504,7 +1376,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Contact__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Contact */ "./components/Contact.js");
 
 
-var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\react\\nextPortfolio\\portfolio-page\\pages\\index.js";
 
 
 
@@ -1526,13 +1397,20 @@ var Index = function Index() {
   var triggerSiteChange = function triggerSiteChange(site) {
     if (site === state.siteActive) return;
     var changer = document.querySelector(".site-change");
+    var links = document.querySelectorAll(".nav__ul__li__a");
     changer.classList.add("site-change--active");
+    links.forEach(function (link) {
+      return link.classList.add("nav__ul__li__a--disabled");
+    });
     setTimeout(function () {
       setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, state, {
         siteActive: site
       }));
       setTimeout(function () {
         changer.classList.remove("site-change--active");
+        links.forEach(function (link) {
+          return link.classList.remove("nav__ul__li__a--disabled");
+        });
       }, 750);
     }, 1000);
   };
@@ -1541,106 +1419,43 @@ var Index = function Index() {
     switch (state.siteActive) {
       case "/":
         return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Home__WEBPACK_IMPORTED_MODULE_6__["default"], {
-          siteChange: triggerSiteChange,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 30
-          },
-          __self: this
+          siteChange: triggerSiteChange
         });
 
       case "about":
         return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_About__WEBPACK_IMPORTED_MODULE_7__["default"], {
-          siteChange: triggerSiteChange,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 32
-          },
-          __self: this
+          siteChange: triggerSiteChange
         });
 
       case "portfolio":
         return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Portfolio__WEBPACK_IMPORTED_MODULE_8__["default"], {
-          siteChange: triggerSiteChange,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 34
-          },
-          __self: this
+          siteChange: triggerSiteChange
         });
 
       case "contact":
         return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Contact__WEBPACK_IMPORTED_MODULE_9__["default"], {
-          siteChange: triggerSiteChange,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 36
-          },
-          __self: this
+          siteChange: triggerSiteChange
         });
 
       default:
         return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Home__WEBPACK_IMPORTED_MODULE_6__["default"], {
-          siteChange: triggerSiteChange,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 38
-          },
-          __self: this
+          siteChange: triggerSiteChange
         });
     }
   };
 
-  var content = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 43
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_4___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 44
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("title", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 45
-    },
-    __self: this
-  }, "Rafa\u0142 Cie\u015Blik Portfolio"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("meta", {
+  var content = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_4___default.a, null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("title", null, "Rafa\u0142 Cie\u015Blik Portfolio"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("meta", {
     name: "viewport",
-    content: "initial-scale=1.0, width=device-width",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 46
-    },
-    __self: this
+    content: "initial-scale=1.0, width=device-width"
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("link", {
     rel: "stylesheet",
     href: "https://use.fontawesome.com/releases/v5.7.2/css/all.css",
     integrity: "sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr",
-    crossorigin: "anonymous",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 47
-    },
-    __self: this
+    crossorigin: "anonymous"
   })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Container__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    siteChange: triggerSiteChange,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 54
-    },
-    __self: this
+    siteChange: triggerSiteChange
   }, renderPage(), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: "site-change",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 56
-    },
-    __self: this
+    className: "site-change"
   })));
   return content;
 };
@@ -1691,6 +1506,17 @@ module.exports = require("core-js/library/fn/array/is-array");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/get-iterator");
+
+/***/ }),
+
+/***/ "core-js/library/fn/json/stringify":
+/*!****************************************************!*\
+  !*** external "core-js/library/fn/json/stringify" ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/json/stringify");
 
 /***/ }),
 
@@ -1746,6 +1572,17 @@ module.exports = require("core-js/library/fn/object/keys");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/object/values");
+
+/***/ }),
+
+/***/ "isomorphic-fetch":
+/*!***********************************!*\
+  !*** external "isomorphic-fetch" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("isomorphic-fetch");
 
 /***/ }),
 

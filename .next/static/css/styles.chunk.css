@@ -99,16 +99,18 @@ body {
   pointer-events: none;
   font-size: 1.3rem;
   font-weight: bold; }
-  .nav__ul li {
+  .nav__ul__li {
     margin: 30px 0;
     text-transform: uppercase; }
-    .nav__ul li a {
+    .nav__ul__li__a {
       text-decoration: none;
-      color: grey; }
+      color: grey;
+      cursor: pointer; }
+      .nav__ul__li__a--disabled {
+        pointer-events: none; }
   .nav__ul li:hover a {
     transition: all 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
-    color: white;
-    cursor: pointer; }
+    color: white; }
 
 .nav:hover .nav__ul {
   opacity: 1;
