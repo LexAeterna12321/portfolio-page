@@ -51,7 +51,13 @@ const Contact = () => {
     <div className="contact">
       <h1 className="contact__h1">Contact Me</h1>
       <ContactInfo />
-      <form className="contact__form" onSubmit={e => handleSubmit(e)}>
+      <form
+        method="POST"
+        name="contact"
+        className="contact__form"
+        onSubmit={e => handleSubmit(e)}
+        data-netlify="true"
+      >
         <input
           onChange={e => handleInputChange(e)}
           onBlur={e => handleValidation(e)}
