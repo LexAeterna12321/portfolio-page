@@ -1,32 +1,29 @@
 const nodemailer = require("nodemailer");
+const sgTransport = require("nodemailer-sendgrid-transport");
+import SENDGRID_API_KEY from "./sendgrid.env";
 
-const transporter = nodemailer.createTransport({
-  service: "Gmail",
-  auth: {
-    type: "OAuth2",
-    user: "lexaeterna12321@gmailcom",
-    refreshToken: "",
-    accessToken: "",
-    clientId: "",
-    clientSecret: ""
-  }
-});
+const transporter = nodemailer.createTransport(
+  sgTransport({
+    auth: {
+      api_key: SENDGRID_API_KEY
+    }
+  })
+);
 
-const send = ({ email, name, message }) => {
+const send = ({ email, text, name }) => {
   const from = name && email ? `${name} <${email}>` : `${name || email}`;
-  const msg = {
+  const message = {
     from,
     to: "lexaeterna12321@gmail.com",
     subject: `New message from ${from}`,
-    message,
+    text,
     replyTo: from
   };
 
   return new Promise((resolve, reject) => {
-    transporter.sendMail(msg, (error, info) =>
+    transporter.sendMail(message, (error, info) =>
       error ? reject(error) : resolve(info)
     );
   });
 };
-
 module.exports = send;

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import ContactInfo from "./ContactInfo";
 const initialState = { name: "", email: "", subject: "", message: "" };
-// import "isomorphic-fetch";
+import "isomorphic-fetch";
 
 const Contact = () => {
   const [state, setState] = useState(initialState);
@@ -33,16 +33,16 @@ const Contact = () => {
       setValidationStatus(
         `Thank you for your message. I hope we keep in touch. ;)`
       );
-      // fetch("/api/contact", {
-      //   method: "POST",
-      //   headers: {
-      //     Accept: "application/json, text/plain, */*",
-      //     "Content-Type": "application/json"
-      //   },
-      //   body: JSON.stringify(state)
-      // }).then(res => {
-      //   res.status === 200 ? setState({ ...state, submitted: true }) : "";
-      // });
+      fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          Accept: "application/json, text/plain, */*",
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(state)
+      }).then(res => {
+        res.status === 200 ? setState({ ...state, submitted: true }) : "";
+      });
     }
   };
 
