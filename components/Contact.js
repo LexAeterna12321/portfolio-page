@@ -52,12 +52,14 @@ const Contact = () => {
       <h1 className="contact__h1">Contact Me</h1>
       <ContactInfo />
       <form
-        method="POST"
         name="contact"
+        method="post"
+        netlify-honeypot="bot-field"
+        data-netlify="true"
         className="contact__form"
         onSubmit={e => handleSubmit(e)}
-        data-netlify="true"
       >
+        <input name="bot-field" className="contact__form__input--hidden" />
         <input
           onChange={e => handleInputChange(e)}
           onBlur={e => handleValidation(e)}

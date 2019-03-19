@@ -46,6 +46,10 @@
         & button {
             @include buttonMixin($main-color, $secondary-color);
         }
+
+        &__input--hidden {
+            display: none;
+        }
     }
 
     &__info {
