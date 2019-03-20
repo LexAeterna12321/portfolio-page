@@ -33,16 +33,16 @@ const Contact = () => {
       setValidationStatus(
         `Thank you for your message. I hope we keep in touch. ;)`
       );
-      fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          Accept: "application/json, text/plain, */*",
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(state)
-      }).then(res => {
-        res.status === 200 ? setState({ ...state, submitted: true }) : "";
-      });
+      // fetch("/api/contact", {
+      //   method: "POST",
+      //   headers: {
+      //     Accept: "application/json, text/plain, */*",
+      //     "Content-Type": "application/json"
+      //   },
+      //   body: JSON.stringify(state)
+      // }).then(res => {
+      //   res.status === 200 ? setState({ ...state, submitted: true }) : "";
+      // });
     }
   };
 
@@ -52,6 +52,7 @@ const Contact = () => {
       <h1 className="contact__h1">Contact Me</h1>
       <ContactInfo />
       <form
+        action="./mail.php"
         name="contact"
         method="post"
         netlify-honeypot="bot-field"

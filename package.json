@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node server",
+    "dev": "next",
     "build": "next build",
     "export": "next export",
     "start": "NODE_ENV=production node server.js",
@@ -31,6 +31,7 @@
     "node-sass": "^4.11.0",
     "nodemailer": "^4.7.0",
     "nodemailer-sendgrid-transport": "^0.2.0",
+    "now": "^14.2.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   }
