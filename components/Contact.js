@@ -52,7 +52,7 @@ const Contact = () => {
       <h1 className="contact__h1">Contact Me</h1>
       <ContactInfo />
       <form
-        action="./mail.php"
+        action="mail.php"
         name="contact"
         method="post"
         netlify-honeypot="bot-field"
