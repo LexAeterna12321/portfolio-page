@@ -13,19 +13,22 @@ app.prepare().then(() => {
 
   server.use(bodyParser.json());
 
-  server.post("/api/contact", (req, res) => {
-    const { email = "", name = "", message = "" } = req.body;
+  server.post(
+    "https://hardcore-austin-a5c8ff.netlify.com/api/contact",
+    (req, res) => {
+      const { email = "", name = "", message = "" } = req.body;
 
-    mailer({ email, name, text: message })
-      .then(() => {
-        console.log("success");
-        res.send("success");
-      })
-      .catch(error => {
-        console.error("failed", error);
-        res.send("error");
-      });
-  });
+      mailer({ email, name, text: message })
+        .then(() => {
+          console.log("success");
+          res.send("success");
+        })
+        .catch(error => {
+          console.error("failed", error);
+          res.send("error");
+        });
+    }
+  );
 
   server.get("*", (req, res) => {
     return handle(req, res);

@@ -1,7 +1,6 @@
 const nodemailer = require("nodemailer");
 const sgTransport = require("nodemailer-sendgrid-transport");
-import SENDGRID_API_KEY from "./sendgrid.env";
-
+const { SENDGRID_API_KEY } = process.env;
 const transporter = nodemailer.createTransport(
   sgTransport({
     auth: {
