@@ -487,6 +487,8 @@ body {
         transition: 0.3s ease-in-out; }
       .contact__form button:hover::before {
         opacity: .5; }
+    .contact__form__input--hidden {
+      display: none; }
   .contact__info {
     font-size: 1.4rem;
     align-self: center;

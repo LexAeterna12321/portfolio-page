@@ -106,7 +106,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Skills__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Skills */ "./components/Skills.js");
 /* harmony import */ var _Education__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Education */ "./components/Education.js");
-var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\react\\nextPortfolio\\portfolio-page\\components\\About.js";
+var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\firebasePort\\portfolio-page\\components\\About.js";
 
 
 
@@ -259,24 +259,21 @@ var About = function About(_ref) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/json/stringify */ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/values */ "./node_modules/@babel/runtime-corejs2/core-js/object/values.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _ContactInfo__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ContactInfo */ "./components/ContactInfo.js");
-/* harmony import */ var isomorphic_fetch__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! isomorphic-fetch */ "isomorphic-fetch");
-/* harmony import */ var isomorphic_fetch__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(isomorphic_fetch__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/values */ "./node_modules/@babel/runtime-corejs2/core-js/object/values.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _ContactInfo__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ContactInfo */ "./components/ContactInfo.js");
+/* harmony import */ var _fbConfig__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../fbConfig */ "./fbConfig/index.js");
 
 
 
 
+var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\firebasePort\\portfolio-page\\components\\Contact.js";
 
-var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\react\\nextPortfolio\\portfolio-page\\components\\Contact.js";
 
 
 
@@ -287,20 +284,23 @@ var initialState = {
   message: ""
 };
 
-
 var Contact = function Contact() {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_5__["useState"])(initialState),
-      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_4__["default"])(_useState, 2),
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_4__["useState"])(initialState),
+      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_3__["default"])(_useState, 2),
       state = _useState2[0],
       setState = _useState2[1];
 
-  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_5__["useState"])(""),
-      _useState4 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_4__["default"])(_useState3, 2),
+  var _useState3 = Object(react__WEBPACK_IMPORTED_MODULE_4__["useState"])(""),
+      _useState4 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_3__["default"])(_useState3, 2),
       validationStatus = _useState4[0],
       setValidationStatus = _useState4[1];
 
+  var writeContactMessage = function writeContactMessage(formData) {
+    _fbConfig__WEBPACK_IMPORTED_MODULE_6__["default"].database().ref("contact").push(formData);
+  };
+
   var handleInputChange = function handleInputChange(e) {
-    setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_3__["default"])({}, state, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_2__["default"])({}, e.target.name, e.target.value)));
+    setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_2__["default"])({}, state, Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])({}, e.target.name, e.target.value)));
   };
 
   var handleValidation = function handleValidation(e) {
@@ -316,7 +316,7 @@ var Contact = function Contact() {
   var handleSubmit = function handleSubmit(e) {
     e.preventDefault();
 
-    var fieldsValues = _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_1___default()(state);
+    var fieldsValues = _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_0___default()(state);
 
     var validationItems = fieldsValues.filter(function (field) {
       return field === "";
@@ -325,20 +325,9 @@ var Contact = function Contact() {
     if (validationItems.length !== 0) {
       setValidationStatus("All fields must be filled.");
     } else {
-      setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_3__["default"])({}, state, initialState));
+      writeContactMessage(state);
+      setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_2__["default"])({}, state, initialState));
       setValidationStatus("Thank you for your message. I hope we keep in touch. ;)");
-      fetch("/api/contact", {
-        method: "POST",
-        headers: {
-          Accept: "application/json, text/plain, */*",
-          "Content-Type": "application/json"
-        },
-        body: _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(state)
-      }).then(function (res) {
-        res.status === 200 ? setState(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_3__["default"])({}, state, {
-          submitted: true
-        })) : "";
-      });
     }
   };
 
@@ -346,49 +335,39 @@ var Contact = function Contact() {
       email = state.email,
       subject = state.subject,
       message = state.message;
-  return react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
+  return react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("div", {
     className: "contact",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 48
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("h1", {
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("h1", {
     className: "contact__h1",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 49
     },
     __self: this
-  }, "Contact Me"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_ContactInfo__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, "Contact Me"), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement(_ContactInfo__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53
+      lineNumber: 50
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("form", {
+  }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("form", {
     name: "contact",
-    method: "post",
-    "netlify-honeypot": "bot-field",
-    "data-netlify": "true",
+    method: "POST",
     className: "contact__form",
     onSubmit: function onSubmit(e) {
       return handleSubmit(e);
     },
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 54
+      lineNumber: 51
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("input", {
-    name: "bot-field",
-    className: "contact__form__input--hidden",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("input", {
+  }, react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("input", {
     onChange: function onChange(e) {
       return handleInputChange(e);
     },
@@ -401,10 +380,10 @@ var Contact = function Contact() {
     value: name,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 57
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("input", {
+  }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("input", {
     onChange: function onChange(e) {
       return handleInputChange(e);
     },
@@ -417,10 +396,10 @@ var Contact = function Contact() {
     value: email,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71
+      lineNumber: 65
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("input", {
+  }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("input", {
     onChange: function onChange(e) {
       return handleInputChange(e);
     },
@@ -433,10 +412,10 @@ var Contact = function Contact() {
     value: subject,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79
+      lineNumber: 73
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("textarea", {
+  }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("textarea", {
     onChange: function onChange(e) {
       return handleInputChange(e);
     },
@@ -450,27 +429,27 @@ var Contact = function Contact() {
     value: message,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 81
     },
     __self: this
-  }), validationStatus ? react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+  }), validationStatus ? react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("p", {
     className: "contact__form__validationStatus",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97
+      lineNumber: 91
     },
     __self: this
-  }, validationStatus) : react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("p", {
+  }, validationStatus) : react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99
+      lineNumber: 93
     },
     __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("button", {
+  }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("button", {
     type: "submit",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101
+      lineNumber: 95
     },
     __self: this
   }, "Send Message")));
@@ -491,7 +470,7 @@ var Contact = function Contact() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\react\\nextPortfolio\\portfolio-page\\components\\ContactInfo.js";
+var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\firebasePort\\portfolio-page\\components\\ContactInfo.js";
 
 
 var ContactInfo = function ContactInfo() {
@@ -625,7 +604,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Nav */ "./components/Nav.js");
-var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\react\\nextPortfolio\\portfolio-page\\components\\Container.js";
+var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\firebasePort\\portfolio-page\\components\\Container.js";
 
 
 
@@ -670,7 +649,7 @@ var Container = function Container(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\react\\nextPortfolio\\portfolio-page\\components\\Education.js";
+var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\firebasePort\\portfolio-page\\components\\Education.js";
 
 
 var Education = function Education() {
@@ -769,7 +748,7 @@ var Education = function Education() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\react\\nextPortfolio\\portfolio-page\\components\\Home.js";
+var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\firebasePort\\portfolio-page\\components\\Home.js";
 
 
 var Home = function Home(_ref) {
@@ -862,44 +841,118 @@ var Home = function Home(_ref) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\firebasePort\\portfolio-page\\components\\Nav.js";
 
 
 var Nav = function Nav(_ref) {
   var siteChange = _ref.siteChange;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
-    className: "nav"
+    className: "nav",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 3
+    },
+    __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "hamburger"
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-    className: "nav__ul"
+    className: "hamburger",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
+    className: "nav__ul",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "nav__ul__li"
+    className: "nav__ul__li",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "nav__ul__li__a",
     onClick: function onClick() {
       return siteChange("/");
-    }
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: this
   }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "nav__ul__li"
+    className: "nav__ul__li",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 15
+    },
+    __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "nav__ul__li__a",
     onClick: function onClick() {
       return siteChange("about");
-    }
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: this
   }, "About Me")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "nav__ul__li"
+    className: "nav__ul__li",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "nav__ul__li__a",
     onClick: function onClick() {
       return siteChange("portfolio");
-    }
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21
+    },
+    __self: this
   }, "Portfolio")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "nav__ul__li"
+    className: "nav__ul__li",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     className: "nav__ul__li__a",
     onClick: function onClick() {
       return siteChange("contact");
-    }
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: this
   }, "Contact"))));
 };
 
@@ -919,7 +972,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Project__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Project */ "./components/Project.js");
-var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\react\\nextPortfolio\\portfolio-page\\components\\Portfolio.js";
+var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\firebasePort\\portfolio-page\\components\\Portfolio.js";
 
 
 
@@ -1003,6 +1056,7 @@ var Portfolio = function Portfolio() {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\firebasePort\\portfolio-page\\components\\Project.js";
 
 
 var Project = function Project(_ref) {
@@ -1011,22 +1065,57 @@ var Project = function Project(_ref) {
       live = _ref.live,
       git = _ref.git;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "portfolio__projects__project"
+    className: "portfolio__projects__project",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 3
+    },
+    __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
     src: "/static/".concat(img),
-    alt: "".concat(name, " Project")
+    alt: "".concat(name, " Project"),
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "portfolio__projects__project__description"
+    className: "portfolio__projects__project__description",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "portfolio__projects__project__description--shown"
+    className: "portfolio__projects__project__description--shown",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
   }, name), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
-    className: "portfolio__projects__project__description--hidden"
+    className: "portfolio__projects__project__description--hidden",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     target: "_blank",
-    href: live
+    href: live,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
   }, "Live"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     target: "_blank",
-    href: git
+    href: git,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
   }, "Github"))));
 };
 
@@ -1045,7 +1134,7 @@ var Project = function Project(_ref) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\react\\nextPortfolio\\portfolio-page\\components\\Skills.js";
+var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\firebasePort\\portfolio-page\\components\\Skills.js";
 
 
 var Skills = function Skills() {
@@ -1163,6 +1252,51 @@ var Skills = function Skills() {
 
 /***/ }),
 
+/***/ "./fbConfig/index.js":
+/*!***************************!*\
+  !*** ./fbConfig/index.js ***!
+  \***************************/
+/*! exports provided: storage, default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "storage", function() { return storage; });
+/* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! firebase/app */ "firebase/app");
+/* harmony import */ var firebase_app__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(firebase_app__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (default from non-harmony) */ __webpack_require__.d(__webpack_exports__, "default", function() { return firebase_app__WEBPACK_IMPORTED_MODULE_0___default.a; });
+/* harmony import */ var firebase_firestore__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! firebase/firestore */ "firebase/firestore");
+/* harmony import */ var firebase_firestore__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(firebase_firestore__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var firebase_auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! firebase/auth */ "firebase/auth");
+/* harmony import */ var firebase_auth__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(firebase_auth__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var firebase_storage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! firebase/storage */ "firebase/storage");
+/* harmony import */ var firebase_storage__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(firebase_storage__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var firebase_database__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! firebase/database */ "firebase/database");
+/* harmony import */ var firebase_database__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(firebase_database__WEBPACK_IMPORTED_MODULE_4__);
+
+
+
+
+
+var FIREBASE_API_KEY = process.env.FIREBASE_API_KEY;
+var config = {
+  apiKey: FIREBASE_API_KEY,
+  authDomain: "portfolio-235022.firebaseapp.com",
+  databaseURL: "https://portfolio-235022.firebaseio.com",
+  projectId: "portfolio-235022",
+  storageBucket: "portfolio-235022.appspot.com",
+  messagingSenderId: "478711629202"
+};
+firebase_app__WEBPACK_IMPORTED_MODULE_0___default.a.initializeApp(config);
+firebase_app__WEBPACK_IMPORTED_MODULE_0___default.a.firestore();
+var storage = firebase_app__WEBPACK_IMPORTED_MODULE_0___default.a.storage();
+
+{
+  /* <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script> */
+}
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js":
 /*!***********************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js ***!
@@ -1182,17 +1316,6 @@ module.exports = __webpack_require__(/*! core-js/library/fn/array/is-array */ "c
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/get-iterator */ "core-js/library/fn/get-iterator");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js":
-/*!***********************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/json/stringify */ "core-js/library/fn/json/stringify");
 
 /***/ }),
 
@@ -1446,6 +1569,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Contact__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/Contact */ "./components/Contact.js");
 
 
+var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\firebasePort\\portfolio-page\\pages\\index.js";
 
 
 
@@ -1489,43 +1613,106 @@ var Index = function Index() {
     switch (state.siteActive) {
       case "/":
         return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Home__WEBPACK_IMPORTED_MODULE_6__["default"], {
-          siteChange: triggerSiteChange
+          siteChange: triggerSiteChange,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 35
+          },
+          __self: this
         });
 
       case "about":
         return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_About__WEBPACK_IMPORTED_MODULE_7__["default"], {
-          siteChange: triggerSiteChange
+          siteChange: triggerSiteChange,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 37
+          },
+          __self: this
         });
 
       case "portfolio":
         return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Portfolio__WEBPACK_IMPORTED_MODULE_8__["default"], {
-          siteChange: triggerSiteChange
+          siteChange: triggerSiteChange,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 39
+          },
+          __self: this
         });
 
       case "contact":
         return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Contact__WEBPACK_IMPORTED_MODULE_9__["default"], {
-          siteChange: triggerSiteChange
+          siteChange: triggerSiteChange,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 41
+          },
+          __self: this
         });
 
       default:
         return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Home__WEBPACK_IMPORTED_MODULE_6__["default"], {
-          siteChange: triggerSiteChange
+          siteChange: triggerSiteChange,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 43
+          },
+          __self: this
         });
     }
   };
 
-  var content = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_4___default.a, null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("title", null, "Rafa\u0142 Cie\u015Blik Portfolio"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("meta", {
+  var content = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 49
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("title", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50
+    },
+    __self: this
+  }, "Rafa\u0142 Cie\u015Blik Portfolio"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("meta", {
     name: "viewport",
-    content: "initial-scale=1.0, width=device-width"
+    content: "initial-scale=1.0, width=device-width",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51
+    },
+    __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("link", {
     rel: "stylesheet",
     href: "https://use.fontawesome.com/releases/v5.7.2/css/all.css",
     integrity: "sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr",
-    crossorigin: "anonymous"
+    crossorigin: "anonymous",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52
+    },
+    __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Container__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    siteChange: triggerSiteChange
+    siteChange: triggerSiteChange,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59
+    },
+    __self: this
   }, renderPage(), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
-    className: "site-change"
+    className: "site-change",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61
+    },
+    __self: this
   })));
   return content;
 };
@@ -1552,7 +1739,7 @@ var Index = function Index() {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\rafal\Desktop\projekty\react\nextPortfolio\portfolio-page\pages\index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! C:\Users\rafal\Desktop\projekty\firebasePort\portfolio-page\pages\index.js */"./pages/index.js");
 
 
 /***/ }),
@@ -1576,17 +1763,6 @@ module.exports = require("core-js/library/fn/array/is-array");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/get-iterator");
-
-/***/ }),
-
-/***/ "core-js/library/fn/json/stringify":
-/*!****************************************************!*\
-  !*** external "core-js/library/fn/json/stringify" ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = require("core-js/library/fn/json/stringify");
 
 /***/ }),
 
@@ -1645,14 +1821,58 @@ module.exports = require("core-js/library/fn/object/values");
 
 /***/ }),
 
-/***/ "isomorphic-fetch":
+/***/ "firebase/app":
+/*!*******************************!*\
+  !*** external "firebase/app" ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("firebase/app");
+
+/***/ }),
+
+/***/ "firebase/auth":
+/*!********************************!*\
+  !*** external "firebase/auth" ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("firebase/auth");
+
+/***/ }),
+
+/***/ "firebase/database":
+/*!************************************!*\
+  !*** external "firebase/database" ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("firebase/database");
+
+/***/ }),
+
+/***/ "firebase/firestore":
+/*!*************************************!*\
+  !*** external "firebase/firestore" ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("firebase/firestore");
+
+/***/ }),
+
+/***/ "firebase/storage":
 /*!***********************************!*\
-  !*** external "isomorphic-fetch" ***!
+  !*** external "firebase/storage" ***!
   \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = require("isomorphic-fetch");
+module.exports = require("firebase/storage");
 
 /***/ }),
 

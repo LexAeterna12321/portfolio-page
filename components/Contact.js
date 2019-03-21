@@ -1,11 +1,18 @@
 import { useState } from "react";
 import ContactInfo from "./ContactInfo";
+import firebase from "../fbConfig";
 const initialState = { name: "", email: "", subject: "", message: "" };
-import "isomorphic-fetch";
 
 const Contact = () => {
   const [state, setState] = useState(initialState);
   const [validationStatus, setValidationStatus] = useState("");
+
+  const writeContactMessage = formData => {
+    firebase
+      .database()
+      .ref("contact")
+      .push(formData);
+  };
 
   const handleInputChange = e => {
     setState({ ...state, [e.target.name]: e.target.value });
@@ -28,21 +35,11 @@ const Contact = () => {
     if (validationItems.length !== 0) {
       setValidationStatus("All fields must be filled.");
     } else {
+      writeContactMessage(state);
       setState({ ...state, ...initialState });
-
       setValidationStatus(
         `Thank you for your message. I hope we keep in touch. ;)`
       );
-      // fetch("/api/contact", {
-      //   method: "POST",
-      //   headers: {
-      //     Accept: "application/json, text/plain, */*",
-      //     "Content-Type": "application/json"
-      //   },
-      //   body: JSON.stringify(state)
-      // }).then(res => {
-      //   res.status === 200 ? setState({ ...state, submitted: true }) : "";
-      // });
     }
   };
 
@@ -52,15 +49,11 @@ const Contact = () => {
       <h1 className="contact__h1">Contact Me</h1>
       <ContactInfo />
       <form
-        action="mail.php"
         name="contact"
-        method="post"
-        netlify-honeypot="bot-field"
-        data-netlify="true"
+        method="POST"
         className="contact__form"
         onSubmit={e => handleSubmit(e)}
       >
-        <input name="bot-field" className="contact__form__input--hidden" />
         <input
           onChange={e => handleInputChange(e)}
           onBlur={e => handleValidation(e)}
