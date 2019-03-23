@@ -2,10 +2,10 @@ import { useState } from "react";
 import "../styles.scss";
 import Head from "next/head";
 import Container from "../components/Container";
-import Home from "../components/Home";
-import About from "../components/About";
-import Portfolio from "../components/Portfolio";
-import Contact from "../components/Contact";
+import Home from "../components/home/Home";
+import About from "../components/about/About";
+import Portfolio from "../components/portfolio/Portfolio";
+import Contact from "../components/contact/Contact";
 
 const Index = () => {
   const [state, setState] = useState({ siteActive: "/" });

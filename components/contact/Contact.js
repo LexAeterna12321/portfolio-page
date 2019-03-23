@@ -1,6 +1,6 @@
 import { useState } from "react";
 import ContactInfo from "./ContactInfo";
-import firebase from "../fbConfig";
+import firebase from "../../fbConfig";
 const initialState = { name: "", email: "", subject: "", message: "" };
 
 const Contact = () => {
