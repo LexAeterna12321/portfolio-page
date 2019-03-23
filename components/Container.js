@@ -1,13 +1,19 @@
 import React from "react";
 import Nav from "./Nav";
-
+import Loader from "./Loader";
 const Container = props => {
-  const { siteChange } = props;
+  const { siteChange, loader } = props;
   return (
     <div className="container">
       <div className="container--inner">
-        <Nav siteChange={siteChange} />
-        {props.children}
+        {loader ? (
+          <Loader />
+        ) : (
+          <React.Fragment>
+            <Nav siteChange={siteChange} />
+            {props.children}
+          </React.Fragment>
+        )}
       </div>
     </div>
   );

@@ -12,12 +12,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Nav */ "./components/Nav.js");
+/* harmony import */ var _Loader__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Loader */ "./components/Loader.js");
 var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\firebasePort\\portfolio-page\\components\\Container.js";
 
 
 
+
 var Container = function Container(props) {
-  var siteChange = props.siteChange;
+  var siteChange = props.siteChange,
+      loader = props.loader;
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "container",
     __source: {
@@ -32,17 +35,76 @@ var Container = function Container(props) {
       lineNumber: 8
     },
     __self: this
+  }, loader ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Loader__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: this
+  }) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Nav__WEBPACK_IMPORTED_MODULE_1__["default"], {
     siteChange: siteChange,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 13
     },
     __self: this
-  }), props.children));
+  }), props.children)));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Container);
+
+/***/ }),
+
+/***/ "./components/Loader.js":
+/*!******************************!*\
+  !*** ./components/Loader.js ***!
+  \******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\firebasePort\\portfolio-page\\components\\Loader.js";
+
+
+var Loader = function Loader() {
+  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "lds-facebook",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 3
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: this
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Loader);
 
 /***/ }),
 
@@ -52465,11 +52527,20 @@ var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\firebasePort\\portfolio
 
 var Index = function Index() {
   var _useState = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])({
-    siteActive: "/"
+    siteActive: "/",
+    loader: true
   }),
       _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(_useState, 2),
       state = _useState2[0],
       setState = _useState2[1];
+
+  if (state.loader) {
+    setTimeout(function () {
+      setState({
+        loader: false
+      });
+    }, 1000);
+  }
 
   var triggerSiteChange = function triggerSiteChange(site) {
     if (site === state.siteActive) return;
@@ -52507,7 +52578,7 @@ var Index = function Index() {
           siteChange: triggerSiteChange,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 43
+            lineNumber: 49
           },
           __self: this
         });
@@ -52517,7 +52588,7 @@ var Index = function Index() {
           siteChange: triggerSiteChange,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 45
+            lineNumber: 51
           },
           __self: this
         });
@@ -52527,7 +52598,7 @@ var Index = function Index() {
           siteChange: triggerSiteChange,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 47
+            lineNumber: 53
           },
           __self: this
         });
@@ -52537,7 +52608,7 @@ var Index = function Index() {
           siteChange: triggerSiteChange,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 49
+            lineNumber: 55
           },
           __self: this
         });
@@ -52547,7 +52618,7 @@ var Index = function Index() {
           siteChange: triggerSiteChange,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 51
+            lineNumber: 57
           },
           __self: this
         });
@@ -52557,19 +52628,19 @@ var Index = function Index() {
   var content = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 62
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_4___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 63
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 64
     },
     __self: this
   }, "Rafa\u0142 Cie\u015Blik Portfolio"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("meta", {
@@ -52577,7 +52648,7 @@ var Index = function Index() {
     content: "initial-scale=1.0, width=device-width",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 65
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("link", {
@@ -52587,21 +52658,22 @@ var Index = function Index() {
     crossorigin: "anonymous",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 66
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Container__WEBPACK_IMPORTED_MODULE_5__["default"], {
     siteChange: triggerSiteChange,
+    loader: state.loader,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 73
     },
     __self: this
   }, renderPage(), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "site-change",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 75
     },
     __self: this
   })));
