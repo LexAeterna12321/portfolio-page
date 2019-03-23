@@ -14,6 +14,14 @@ const Index = () => {
     if (site === state.siteActive) return;
     const changer = document.querySelector(".site-change");
     const links = document.querySelectorAll(".nav__ul__li__a");
+    const borders = document.querySelector(".container--inner");
+
+    if (site !== "/") {
+      borders.classList.add("container--inner__border");
+    } else {
+      borders.classList.remove("container--inner__border");
+    }
+
     changer.classList.add("site-change--active");
     links.forEach(link => link.classList.add("nav__ul__li__a--disabled"));
 

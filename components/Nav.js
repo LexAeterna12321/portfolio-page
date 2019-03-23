@@ -1,29 +1,48 @@
+import { useState } from "react";
+
 const Nav = ({ siteChange }) => {
+  const [navState, setNavState] = useState({ active: false });
+
+  const onLinkClick = site => {
+    const navHamb = document.querySelector(".hamburger");
+    setNavState({ active: false });
+    navHamb.classList.remove("hamburger--active");
+    siteChange(site);
+  };
+  const navToggle = () => {
+    const navHamb = document.querySelector(".hamburger");
+    navHamb.classList.toggle("hamburger--active");
+    setNavState({ active: !navState.active });
+  };
+
   return (
     <nav className="nav">
-      <div className="hamburger">
+      <div className="hamburger" onClick={() => navToggle()}>
         <span />
         <span />
         <span />
       </div>
-      <ul className="nav__ul">
+      <ul className="nav__ul" style={navState.active ? style : null}>
         <li className="nav__ul__li">
-          <a className="nav__ul__li__a" onClick={() => siteChange("/")}>
+          <a className="nav__ul__li__a" onClick={() => onLinkClick("/")}>
             Home
           </a>
         </li>
         <li className="nav__ul__li">
-          <a className="nav__ul__li__a" onClick={() => siteChange("about")}>
+          <a className="nav__ul__li__a" onClick={() => onLinkClick("about")}>
             About Me
           </a>
         </li>
         <li className="nav__ul__li">
-          <a className="nav__ul__li__a" onClick={() => siteChange("portfolio")}>
+          <a
+            className="nav__ul__li__a"
+            onClick={() => onLinkClick("portfolio")}
+          >
             Portfolio
           </a>
         </li>
         <li className="nav__ul__li">
-          <a className="nav__ul__li__a" onClick={() => siteChange("contact")}>
+          <a className="nav__ul__li__a" onClick={() => onLinkClick("contact")}>
             Contact
           </a>
         </li>
@@ -31,5 +50,10 @@ const Nav = ({ siteChange }) => {
     </nav>
   );
 };
+const style = {
+  opacity: "1",
+  pointerEvents: "all",
 
+  transform: "translateX(0)"
+};
 export default Nav;

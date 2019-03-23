@@ -32,15 +32,18 @@
         width: 92%;
         height: 96%;
         border: 1px solid $secondary-color;
-        mix-blend-mode: color-dodge;
         z-index: 6;
         pointer-events: none;
-
     }
 
     &::after {
         width: 95%;
         height: 93%;
+    }
+
+    &__border::before,
+    &__border::after {
+        border: 1px solid $main-color;
     }
 }
 

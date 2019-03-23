@@ -839,123 +839,160 @@ var Home = function Home(_ref) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/slicedToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/slicedToArray.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+
 var _jsxFileName = "C:\\Users\\rafal\\Desktop\\projekty\\firebasePort\\portfolio-page\\components\\Nav.js";
+
 
 
 var Nav = function Nav(_ref) {
   var siteChange = _ref.siteChange;
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("nav", {
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])({
+    active: false
+  }),
+      _useState2 = Object(_babel_runtime_corejs2_helpers_esm_slicedToArray__WEBPACK_IMPORTED_MODULE_0__["default"])(_useState, 2),
+      navState = _useState2[0],
+      setNavState = _useState2[1];
+
+  var onLinkClick = function onLinkClick(site) {
+    var navHamb = document.querySelector(".hamburger");
+    setNavState({
+      active: false
+    });
+    navHamb.classList.remove("hamburger--active");
+    siteChange(site);
+  };
+
+  var navToggle = function navToggle() {
+    var navHamb = document.querySelector(".hamburger");
+    navHamb.classList.toggle("hamburger--active");
+    setNavState({
+      active: !navState.active
+    });
+  };
+
+  return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("nav", {
     className: "nav",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 3
+      lineNumber: 19
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", {
     className: "hamburger",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 4
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    },
-    __self: this
-  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    },
-    __self: this
-  })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
-    className: "nav__ul",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "nav__ul__li",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "nav__ul__li__a",
     onClick: function onClick() {
-      return siteChange("/");
+      return navToggle();
     },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 11
-    },
-    __self: this
-  }, "Home")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "nav__ul__li",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 15
-    },
-    __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "nav__ul__li__a",
-    onClick: function onClick() {
-      return siteChange("about");
-    },
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 16
-    },
-    __self: this
-  }, "About Me")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "nav__ul__li",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 20
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "nav__ul__li__a",
-    onClick: function onClick() {
-      return siteChange("portfolio");
-    },
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 21
     },
     __self: this
-  }, "Portfolio")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
-    className: "nav__ul__li",
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23
+    },
+    __self: this
+  })), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("ul", {
+    className: "nav__ul",
+    style: navState.active ? style : null,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 25
     },
     __self: this
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    className: "nav__ul__li__a",
-    onClick: function onClick() {
-      return siteChange("contact");
-    },
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "nav__ul__li",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 26
     },
     __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    className: "nav__ul__li__a",
+    onClick: function onClick() {
+      return onLinkClick("/");
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: this
+  }, "Home")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "nav__ul__li",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    className: "nav__ul__li__a",
+    onClick: function onClick() {
+      return onLinkClick("about");
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32
+    },
+    __self: this
+  }, "About Me")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "nav__ul__li",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    className: "nav__ul__li__a",
+    onClick: function onClick() {
+      return onLinkClick("portfolio");
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: this
+  }, "Portfolio")), react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("li", {
+    className: "nav__ul__li",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44
+    },
+    __self: this
+  }, react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("a", {
+    className: "nav__ul__li__a",
+    onClick: function onClick() {
+      return onLinkClick("contact");
+    },
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 45
+    },
+    __self: this
   }, "Contact"))));
 };
 
+var style = {
+  opacity: "1",
+  pointerEvents: "all",
+  transform: "translateX(0)"
+};
 /* harmony default export */ __webpack_exports__["default"] = (Nav);
 
 /***/ }),
@@ -1291,9 +1328,6 @@ firebase_app__WEBPACK_IMPORTED_MODULE_0___default.a.initializeApp(config);
 firebase_app__WEBPACK_IMPORTED_MODULE_0___default.a.firestore();
 var storage = firebase_app__WEBPACK_IMPORTED_MODULE_0___default.a.storage();
 
-{
-  /* <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script> */
-}
 
 /***/ }),
 
@@ -1592,6 +1626,14 @@ var Index = function Index() {
     if (site === state.siteActive) return;
     var changer = document.querySelector(".site-change");
     var links = document.querySelectorAll(".nav__ul__li__a");
+    var borders = document.querySelector(".container--inner");
+
+    if (site !== "/") {
+      borders.classList.add("container--inner__border");
+    } else {
+      borders.classList.remove("container--inner__border");
+    }
+
     changer.classList.add("site-change--active");
     links.forEach(function (link) {
       return link.classList.add("nav__ul__li__a--disabled");
@@ -1616,7 +1658,7 @@ var Index = function Index() {
           siteChange: triggerSiteChange,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 35
+            lineNumber: 43
           },
           __self: this
         });
@@ -1626,7 +1668,7 @@ var Index = function Index() {
           siteChange: triggerSiteChange,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 37
+            lineNumber: 45
           },
           __self: this
         });
@@ -1636,7 +1678,7 @@ var Index = function Index() {
           siteChange: triggerSiteChange,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 39
+            lineNumber: 47
           },
           __self: this
         });
@@ -1646,7 +1688,7 @@ var Index = function Index() {
           siteChange: triggerSiteChange,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 41
+            lineNumber: 49
           },
           __self: this
         });
@@ -1656,7 +1698,7 @@ var Index = function Index() {
           siteChange: triggerSiteChange,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 43
+            lineNumber: 51
           },
           __self: this
         });
@@ -1666,19 +1708,19 @@ var Index = function Index() {
   var content = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 56
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(next_server_head__WEBPACK_IMPORTED_MODULE_4___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49
+      lineNumber: 57
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 58
     },
     __self: this
   }, "Rafa\u0142 Cie\u015Blik Portfolio"), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("meta", {
@@ -1686,7 +1728,7 @@ var Index = function Index() {
     content: "initial-scale=1.0, width=device-width",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 59
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("link", {
@@ -1696,21 +1738,21 @@ var Index = function Index() {
     crossorigin: "anonymous",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 52
+      lineNumber: 60
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Container__WEBPACK_IMPORTED_MODULE_5__["default"], {
     siteChange: triggerSiteChange,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 67
     },
     __self: this
   }, renderPage(), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "site-change",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 69
     },
     __self: this
   })));
