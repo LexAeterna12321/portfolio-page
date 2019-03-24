@@ -376,7 +376,7 @@ body {
   position: relative;
   max-width: 1480px;
   padding: 100px 13%;
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: #d2dae2;
   color: #2d3986;
   height: 100%;
@@ -406,7 +406,8 @@ body {
       height: 400px;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      overflow: hidden; }
       .portfolio__projects__project::before {
         content: '';
         position: absolute;

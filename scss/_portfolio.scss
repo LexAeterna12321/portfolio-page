@@ -2,7 +2,7 @@
     position: relative;
     max-width: $max-width;
     padding: 100px 13%;
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: $secondary-color;
     color: $main-color;
     height: 100%;
@@ -33,6 +33,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            overflow: hidden;
             @include highlight;
 
             & img {

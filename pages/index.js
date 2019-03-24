@@ -8,11 +8,12 @@ import Portfolio from "../components/portfolio/Portfolio";
 import Contact from "../components/contact/Contact";
 
 const Index = () => {
-  const [state, setState] = useState({ siteActive: "/", loader: true });
+  const [state, setState] = useState({ siteActive: "/" });
+  const [loaderStatus, setLoaderStatus] = useState({ loader: true });
 
-  if (state.loader) {
+  if (loaderStatus.loader) {
     setTimeout(() => {
-      setState({ loader: false });
+      setLoaderStatus({ loader: false });
     }, 1000);
   }
 
@@ -70,7 +71,7 @@ const Index = () => {
           crossorigin="anonymous"
         />
       </Head>
-      <Container siteChange={triggerSiteChange} loader={state.loader}>
+      <Container siteChange={triggerSiteChange} loader={loaderStatus.loader}>
         {renderPage()}
         <div className="site-change" />
       </Container>
