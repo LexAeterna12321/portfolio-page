@@ -45,6 +45,7 @@
 
         & button {
             @include buttonMixin($main-color, $secondary-color);
+
         }
 
         &__input--hidden {
@@ -59,7 +60,7 @@
         grid-row: span 2;
 
         &__city,
-        &__phone,
+        &__mail,
         &__git,
         &__linkedin {
             margin: 40px 0;

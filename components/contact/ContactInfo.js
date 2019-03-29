@@ -5,9 +5,10 @@ const ContactInfo = () => {
         <i className="fas fa-map-marker-alt" />
         <span>Wrocław</span>
       </div>
-      <div className="contact__info__phone">
-        <a href="tel:781-139-442" target="_blank">
-          <i className="fas fa-phone" /> <span>781 139 442</span>
+      <div className="contact__info__mail">
+        <a href="mailto:rafalcieslik12321@gmail.com" target="_blank">
+          <i className="fas fa-envelope-open-text" />
+          <span>E-mail</span>
         </a>
       </div>
       <div className="contact__info__git">

@@ -230,7 +230,7 @@ body {
       position: absolute;
       top: 50%;
       left: 50%;
-      width: 150%;
+      width: 120%;
       height: 110%;
       background-color: #202960;
       transform: translate(-50%, -50%) rotate(-5deg);
@@ -317,7 +317,7 @@ body {
       position: absolute;
       top: 50%;
       left: 50%;
-      width: 150%;
+      width: 120%;
       height: 110%;
       background-color: #202960;
       transform: translate(-50%, -50%) rotate(-5deg);
@@ -413,7 +413,7 @@ body {
         position: absolute;
         top: 50%;
         left: 50%;
-        width: 150%;
+        width: 120%;
         height: 110%;
         background-color: #202960;
         transform: translate(-50%, -50%) rotate(-5deg);
@@ -457,8 +457,6 @@ body {
             cursor: pointer; }
             .portfolio__projects__project__description--hidden a:hover {
               color: #575fcf; }
-      .portfolio__projects__project:hover img {
-        filter: blur(2px); }
       .portfolio__projects__project:hover .portfolio__projects__project__description--shown {
         transform: translateY(-250%);
         opacity: 0; }
@@ -532,7 +530,7 @@ body {
         position: absolute;
         top: 50%;
         left: 50%;
-        width: 150%;
+        width: 120%;
         height: 110%;
         background-color: #202960;
         transform: translate(-50%, -50%) rotate(-5deg);
@@ -547,17 +545,17 @@ body {
     align-self: center;
     justify-self: center;
     grid-row: span 2; }
-    .contact__info__city, .contact__info__phone, .contact__info__git, .contact__info__linkedin {
+    .contact__info__city, .contact__info__mail, .contact__info__git, .contact__info__linkedin {
       margin: 40px 0; }
-      .contact__info__city i, .contact__info__phone i, .contact__info__git i, .contact__info__linkedin i {
+      .contact__info__city i, .contact__info__mail i, .contact__info__git i, .contact__info__linkedin i {
         padding: 0 5px; }
-      .contact__info__city a, .contact__info__phone a, .contact__info__git a, .contact__info__linkedin a {
+      .contact__info__city a, .contact__info__mail a, .contact__info__git a, .contact__info__linkedin a {
         display: block;
         text-decoration: none;
         color: #2d3986;
         cursor: pointer;
         transition: 0.2s; }
-        .contact__info__city a:hover, .contact__info__phone a:hover, .contact__info__git a:hover, .contact__info__linkedin a:hover {
+        .contact__info__city a:hover, .contact__info__mail a:hover, .contact__info__git a:hover, .contact__info__linkedin a:hover {
           color: #1e272e; }
 
 @media screen and (max-width: 760px) {

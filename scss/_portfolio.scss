@@ -86,10 +86,6 @@
 
             }
 
-            &:hover img {
-                filter: blur(2px);
-            }
-
             &:hover &__description--shown {
                 transform: translateY(-250%);
                 opacity: 0;

@@ -912,14 +912,14 @@ var ContactInfo = function ContactInfo() {
     },
     __self: this
   }, "Wroc\u0142aw")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: "contact__info__phone",
+    className: "contact__info__mail",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    href: "tel:781-139-442",
+    href: "mailto:rafalcieslik12321@gmail.com",
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
@@ -927,23 +927,23 @@ var ContactInfo = function ContactInfo() {
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
-    className: "fas fa-phone",
+    className: "fas fa-envelope-open-text",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 10
     },
     __self: this
-  }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 11
     },
     __self: this
-  }, "781 139 442"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "E-mail"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "contact__info__git",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 14
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -951,27 +951,27 @@ var ContactInfo = function ContactInfo() {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 14
+      lineNumber: 15
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fab fa-github",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 16
     },
     __self: this
   }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 16
     },
     __self: this
   }, "Github"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "contact__info__linkedin",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 19
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -979,20 +979,20 @@ var ContactInfo = function ContactInfo() {
     target: "_blank",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 20
     },
     __self: this
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("i", {
     className: "fab fa-linkedin-in",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 24
     },
     __self: this
   }), " ", react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 24
     },
     __self: this
   }, "LinkedIn"))));
