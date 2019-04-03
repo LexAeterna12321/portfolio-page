@@ -64,6 +64,16 @@ const Index = () => {
       <Head>
         <title>Rafał Cieślik Portfolio</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta
+          name="description"
+          content="My Portfolio Page. You can freely contact me via contact form"
+        />
+        <meta
+          name="keywords"
+          content="Rafał Cieślik, Cieślik Portfolio, Rafał Cieślik Portfolio Page"
+        />
+        <meta name="author" content="Rafał Cieślik" />
+        <link rel="icon" href="/static/favicon.ico" />
         <link
           rel="stylesheet"
           href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"

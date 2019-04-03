@@ -1808,6 +1808,38 @@ var Index = function Index() {
       lineNumber: 66
     },
     __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("meta", {
+    name: "description",
+    content: "My Portfolio Page. You can freely contact me via contact form",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 67
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("meta", {
+    name: "keywords",
+    content: "Rafa\u0142 Cie\u015Blik, Cie\u015Blik Portfolio, Rafa\u0142 Cie\u015Blik Portfolio Page",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("meta", {
+    name: "author",
+    content: "Rafa\u0142 Cie\u015Blik",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 75
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("link", {
+    rel: "icon",
+    href: "/static/favicon.ico",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 76
+    },
+    __self: this
   }), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("link", {
     rel: "stylesheet",
     href: "https://use.fontawesome.com/releases/v5.7.2/css/all.css",
@@ -1815,7 +1847,7 @@ var Index = function Index() {
     crossorigin: "anonymous",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67
+      lineNumber: 77
     },
     __self: this
   })), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(_components_Container__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -1823,14 +1855,14 @@ var Index = function Index() {
     loader: loaderStatus.loader,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 84
     },
     __self: this
   }, renderPage(), react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", {
     className: "site-change",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76
+      lineNumber: 86
     },
     __self: this
   })));
