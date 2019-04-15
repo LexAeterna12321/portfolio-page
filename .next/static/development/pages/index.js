@@ -389,7 +389,7 @@ var About = function About(_ref) {
       lineNumber: 25
     },
     __self: this
-  }, "Hi There, I'm self taught web developer. I'm refactoring myself from scratch. I've fallen in love with Front end world, especially javaScript teamed up with React.js framework."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+  }, "Hi There, I'm self taught web developer. I'm refactoring myself from scratch. I've fallen in love with Frontend world, especially JavaScript and his massive library - React."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "about__description__button",
     onClick: function onClick() {
       return siteChange("contact");
@@ -1144,13 +1144,23 @@ var Portfolio = function Portfolio() {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Project__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    name: "Kitchen-Helper",
+    img: "kitchen.png",
+    live: "https://lexaeterna12321.github.io/kitchen-helper/",
+    git: "https://github.com/LexAeterna12321/kitchen-helper",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: this
+  }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Project__WEBPACK_IMPORTED_MODULE_1__["default"], {
     name: "Adventurer Site",
     img: "adv.png",
     live: "https://lexaeterna12321.github.io/Adventurer-Site/",
     git: "https://github.com/LexAeterna12321/Adventurer-Site",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 19
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Project__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -1160,7 +1170,7 @@ var Portfolio = function Portfolio() {
     git: "https://github.com/LexAeterna12321/GymSite",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 25
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Project__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -1170,7 +1180,7 @@ var Portfolio = function Portfolio() {
     git: "https://github.com/LexAeterna12321/portfolio-page",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 31
     },
     __self: this
   })));

@@ -24,8 +24,8 @@ const About = ({ siteChange }) => {
       <div className="about__description">
         <p>
           Hi There, I'm self taught web developer. I'm refactoring myself from
-          scratch. I've fallen in love with Front end world, especially
-          javaScript teamed up with React.js framework.
+          scratch. I've fallen in love with Frontend world, especially
+          JavaScript and his massive library - React.
         </p>
 
         <button

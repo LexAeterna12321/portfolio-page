@@ -11,6 +11,12 @@ const Portfolio = () => {
           git="https://github.com/LexAeterna12321/Train-Through-Life"
         />
         <Project
+          name="Kitchen-Helper"
+          img="kitchen.png"
+          live="https://lexaeterna12321.github.io/kitchen-helper/"
+          git="https://github.com/LexAeterna12321/kitchen-helper"
+        />
+        <Project
           name="Adventurer Site"
           img="adv.png"
           live="https://lexaeterna12321.github.io/Adventurer-Site/"

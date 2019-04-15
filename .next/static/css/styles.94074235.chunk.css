@@ -14,6 +14,45 @@ html {
 body {
   overflow: hidden; }
 
+.lds-facebook {
+  display: inline-block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 64px;
+  height: 64px;
+  z-index: 7; }
+
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 6px;
+  width: 13px;
+  background: #2d3986;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite; }
+
+.lds-facebook div:nth-child(1) {
+  left: 6px;
+  animation-delay: -0.24s; }
+
+.lds-facebook div:nth-child(2) {
+  left: 26px;
+  animation-delay: -0.12s; }
+
+.lds-facebook div:nth-child(3) {
+  left: 45px;
+  animation-delay: 0; }
+
+@keyframes lds-facebook {
+  0% {
+    top: 6px;
+    height: 51px; }
+  50%,
+  100% {
+    top: 19px;
+    height: 26px; } }
+
 .container {
   width: 100%;
   height: 100vh;
@@ -44,12 +83,13 @@ body {
     width: 92%;
     height: 96%;
     border: 1px solid #d2dae2;
-    mix-blend-mode: color-dodge;
     z-index: 6;
     pointer-events: none; }
   .container--inner::after {
     width: 95%;
     height: 93%; }
+  .container--inner__border::before, .container--inner__border::after {
+    border: 1px solid #2d3986; }
 
 .site-change {
   position: absolute;
@@ -84,7 +124,7 @@ body {
   top: 0;
   right: 0;
   height: 100%;
-  width: 0;
+  width: 30vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -98,7 +138,9 @@ body {
   will-change: opacity, width;
   pointer-events: none;
   font-size: 1.3rem;
-  font-weight: bold; }
+  font-weight: bold;
+  will-change: transform;
+  transform: translateX(100%); }
   .nav__ul__li {
     margin: 30px 0;
     text-transform: uppercase; }
@@ -112,12 +154,6 @@ body {
     transition: all 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
     color: white; }
 
-.nav:hover .nav__ul {
-  opacity: 1;
-  pointer-events: all;
-  width: 20vw;
-  position: absolute; }
-
 .hamburger {
   font-size: 3vw;
   position: absolute;
@@ -128,21 +164,31 @@ body {
   justify-content: space-evenly;
   width: 40px;
   height: 40px;
-  z-index: 3;
-  cursor: pointer; }
+  z-index: 6;
+  cursor: pointer;
+  overflow: hidden; }
   .hamburger span {
     width: 100%;
     height: 5px;
-    background-color: #1e272e; }
+    background-color: #1e272e;
+    transition: .5s;
+    transform: translateX(0); }
+  .hamburger--active span {
+    background-color: #2d3986; }
+  .hamburger--active span:nth-of-type(2) {
+    transform: translateX(100%); }
+  .hamburger--active span:nth-of-type(1) {
+    transition-delay: .5s;
+    transform: rotate(45deg) translate(10px, 7px); }
+  .hamburger--active span:nth-of-type(3) {
+    transition-delay: .5s;
+    transform: rotate(-45deg) translate(8px, -6px); }
 
 @media screen and (max-width: 760px) {
   .nav__ul {
     position: fixed;
     height: 100%;
-    mix-blend-mode: normal; }
-  .nav:hover .nav__ul {
-    position: fixed;
-    width: 85vw; } }
+    width: 100vw; } }
 
 .home {
   position: relative;
@@ -156,7 +202,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: hidden; }
+  overflow: hidden;
+  opacity: 0;
+  animation: initialStage 1s forwards; }
+
+@keyframes initialStage {
+  to {
+    opacity: 1; } }
   .home__h1 {
     font-size: 3rem;
     text-transform: uppercase;
@@ -178,7 +230,7 @@ body {
       position: absolute;
       top: 50%;
       left: 50%;
-      width: 150%;
+      width: 120%;
       height: 110%;
       background-color: #202960;
       transform: translate(-50%, -50%) rotate(-5deg);
@@ -265,7 +317,7 @@ body {
       position: absolute;
       top: 50%;
       left: 50%;
-      width: 150%;
+      width: 120%;
       height: 110%;
       background-color: #202960;
       transform: translate(-50%, -50%) rotate(-5deg);
@@ -324,7 +376,7 @@ body {
   position: relative;
   max-width: 1480px;
   padding: 100px 13%;
-  overflow: hidden;
+  overflow-x: hidden;
   background-color: #d2dae2;
   color: #2d3986;
   height: 100%;
@@ -354,13 +406,14 @@ body {
       height: 400px;
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      overflow: hidden; }
       .portfolio__projects__project::before {
         content: '';
         position: absolute;
         top: 50%;
         left: 50%;
-        width: 150%;
+        width: 120%;
         height: 110%;
         background-color: #202960;
         transform: translate(-50%, -50%) rotate(-5deg);
@@ -404,8 +457,6 @@ body {
             cursor: pointer; }
             .portfolio__projects__project__description--hidden a:hover {
               color: #575fcf; }
-      .portfolio__projects__project:hover img {
-        filter: blur(2px); }
       .portfolio__projects__project:hover .portfolio__projects__project__description--shown {
         transform: translateY(-250%);
         opacity: 0; }
@@ -479,7 +530,7 @@ body {
         position: absolute;
         top: 50%;
         left: 50%;
-        width: 150%;
+        width: 120%;
         height: 110%;
         background-color: #202960;
         transform: translate(-50%, -50%) rotate(-5deg);
@@ -494,17 +545,17 @@ body {
     align-self: center;
     justify-self: center;
     grid-row: span 2; }
-    .contact__info__city, .contact__info__phone, .contact__info__git, .contact__info__linkedin {
+    .contact__info__city, .contact__info__mail, .contact__info__git, .contact__info__linkedin {
       margin: 40px 0; }
-      .contact__info__city i, .contact__info__phone i, .contact__info__git i, .contact__info__linkedin i {
+      .contact__info__city i, .contact__info__mail i, .contact__info__git i, .contact__info__linkedin i {
         padding: 0 5px; }
-      .contact__info__city a, .contact__info__phone a, .contact__info__git a, .contact__info__linkedin a {
+      .contact__info__city a, .contact__info__mail a, .contact__info__git a, .contact__info__linkedin a {
         display: block;
         text-decoration: none;
         color: #2d3986;
         cursor: pointer;
         transition: 0.2s; }
-        .contact__info__city a:hover, .contact__info__phone a:hover, .contact__info__git a:hover, .contact__info__linkedin a:hover {
+        .contact__info__city a:hover, .contact__info__mail a:hover, .contact__info__git a:hover, .contact__info__linkedin a:hover {
           color: #1e272e; }
 
 @media screen and (max-width: 760px) {
