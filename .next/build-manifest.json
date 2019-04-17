@@ -4,7 +4,7 @@
     "/index": [
       "static/runtime/webpack-838b392324e3598684b5.js",
       "static/chunks/commons.facba1f76be43292291a.js",
-      "static/css/styles.94074235.chunk.css",
+      "static/css/styles.9432a225.chunk.css",
       "static/chunks/styles.692daf301bbeae4ce604.js",
       "static/runtime/main-86b0dc22d5241b81a2b1.js"
     ],
@@ -21,7 +21,7 @@
     "/": [
       "static/runtime/webpack-838b392324e3598684b5.js",
       "static/chunks/commons.facba1f76be43292291a.js",
-      "static/css/styles.94074235.chunk.css",
+      "static/css/styles.9432a225.chunk.css",
       "static/chunks/styles.692daf301bbeae4ce604.js",
       "static/runtime/main-86b0dc22d5241b81a2b1.js"
     ]

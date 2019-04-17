@@ -389,7 +389,7 @@ var About = function About(_ref) {
       lineNumber: 25
     },
     __self: this
-  }, "Hi There, I'm self taught web developer. I'm refactoring myself from scratch. I've fallen in love with Frontend world, especially JavaScript and his massive library - React."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+  }, "Hi There, I'm self taught web developer. I'm refactoring myself from scratch. I've fallen in love with Frontend world, especially JavaScript and its massive library - React."), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     className: "about__description__button",
     onClick: function onClick() {
       return siteChange("contact");

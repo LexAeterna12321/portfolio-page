@@ -358,7 +358,8 @@ body {
   justify-content: center;
   align-content: center;
   grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
-  grid-gap: 30px; }
+  grid-gap: 30px;
+  padding: 30px 0; }
   .education__item {
     padding: 15px;
     display: flex;
@@ -397,7 +398,8 @@ body {
     display: grid;
     grid-gap: 50px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    justify-items: center; }
+    justify-items: center;
+    padding: 30px 0; }
     .portfolio__projects__project {
       position: relative;
       top: 0;
