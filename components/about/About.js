@@ -1,12 +1,14 @@
+import PropTypes from 'prop-types';
 import Skills from "./Skills";
 import Education from "./Education";
 const About = ({ siteChange }) => {
   return (
-    <div className="about">
-      <h1 className="about__h1">I'm a novice programmer</h1>
+    <section className="about">
+      <header className="about__header">I'm a novice programmer</header>
+      <article>
       <ul className="about__basic-info">
         <li>
-          Name: <span>Rafał Cieślik</span>
+          Name: <span><strong>Rafał Cieślik</strong></span>
         </li>
         <li>
           Job: <span>Clerk</span>
@@ -21,7 +23,8 @@ const About = ({ siteChange }) => {
           Dream Job: <span>Tech Job</span>
         </li>
       </ul>
-      <div className="about__description">
+      </article>
+      <article className="about__description">
         <p>
           Hi There, I'm self taught web developer. I'm refactoring myself from
           scratch. I've fallen in love with Frontend world, especially
@@ -34,13 +37,16 @@ const About = ({ siteChange }) => {
         >
           Hire Me
         </button>
-      </div>
-      <h1 className="about__h1">My skills</h1>
+      </article>
+      <h2 className="about__h2">My skills</h2>
       <Skills />
-      <h1 className="about__h1">My education</h1>
+      <h2 className="about__h2">My education</h2>
       <Education />
-    </div>
+    </section>
   );
 };
 
+About.propTypes={
+  siteChange: PropTypes.func.isRequired
+}
 export default About;

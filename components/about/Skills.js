@@ -1,6 +1,6 @@
 const Skills = () => {
   return (
-    <div className="icons">
+    <article className="icons">
       <div className="icons__icon">
         <i className="fab fa-html5" />
         <span>HTML</span>
@@ -21,7 +21,7 @@ const Skills = () => {
         <i className="fab fa-react" />
         <span>React & Redux</span>
       </div>
-    </div>
+    </article>
   );
 };
 

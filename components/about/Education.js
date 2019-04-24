@@ -1,6 +1,6 @@
 const Education = () => {
   return (
-    <div className="education">
+    <article className="education">
       <div className="education__item">
         <p className="education__item__year">Feb 2015 – Oct 2017</p>
         <p className="education__item__degree">Master Degree</p>
@@ -13,7 +13,7 @@ const Education = () => {
         <p className="education__item__major">Administration</p>
         <p className="education__item__school">University of Wroclaw</p>
       </div>
-    </div>
+    </article>
   );
 };
 

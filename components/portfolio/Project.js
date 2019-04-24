@@ -1,11 +1,13 @@
+import PropTypes from 'prop-types';
 const Project = ({ name, img, live, git }) => {
   return (
-    <div className="portfolio__projects__project">
-      <img src={`/static/${img}`} alt={`${name} Project`} />
+    <article className="portfolio__projects__project">
+    <figure>
+    <img src={`/static/${img}`} alt={`${name} Project`} />
       <div className="portfolio__projects__project__description">
-        <p className="portfolio__projects__project__description--shown">
+        <figcaption className="portfolio__projects__project__description--shown">
           {name}
-        </p>
+        </figcaption>
         <p className="portfolio__projects__project__description--hidden">
           <a target="_blank" href={live}>
             Live
@@ -15,8 +17,16 @@ const Project = ({ name, img, live, git }) => {
           </a>
         </p>
       </div>
-    </div>
+    </figure>
+     
+    </article>
   );
 };
 
+Project.propTypes = {
+  name: PropTypes.string.isRequired,
+  img: PropTypes.string.isRequired,
+  live: PropTypes.string.isRequired,
+  git: PropTypes.string.isRequired,
+}
 export default Project;

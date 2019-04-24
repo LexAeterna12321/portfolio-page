@@ -45,8 +45,8 @@ const Contact = () => {
 
   const { name, email, subject, message } = state;
   return (
-    <div className="contact">
-      <h1 className="contact__h1">Contact Me</h1>
+    <section className="contact">
+      <header className="contact__header">Contact Me</header>
       <ContactInfo />
       <form
         name="contact"
@@ -94,7 +94,7 @@ const Contact = () => {
         )}
         <button type="submit">Send Message</button>
       </form>
-    </div>
+    </section>
   );
 };
 

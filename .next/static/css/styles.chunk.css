@@ -280,11 +280,12 @@ body {
   .about::-webkit-scrollbar-thumb {
     background-color: #2d3986;
     outline: 1px solid #1e272e; }
-  .about__h1 {
+  .about__header, .about__h2 {
     font-size: 1.5rem;
     text-transform: uppercase;
     margin: 10px;
-    grid-column: 1 / -1; }
+    grid-column: 1 / -1;
+    font-weight: 700; }
   .about__basic-info {
     list-style: none;
     padding: 0 15px;
@@ -390,10 +391,11 @@ body {
   .portfolio::-webkit-scrollbar-thumb {
     background-color: #2d3986;
     outline: 1px solid #1e272e; }
-  .portfolio__h1 {
+  .portfolio__header {
     font-size: 1.5rem;
     text-transform: uppercase;
-    margin: 10px; }
+    margin: 10px;
+    font-weight: 700; }
   .portfolio__projects {
     display: grid;
     grid-gap: 50px;
@@ -497,11 +499,12 @@ body {
   .contact::-webkit-scrollbar-thumb {
     background-color: #2d3986;
     outline: 1px solid #1e272e; }
-  .contact__h1 {
+  .contact__header {
     font-size: 1.5rem;
     text-transform: uppercase;
     margin: 10px;
-    grid-column: span 2; }
+    grid-column: span 2;
+    font-weight: 700; }
   .contact__form {
     grid-column: span 2;
     display: grid;
@@ -547,18 +550,20 @@ body {
     align-self: center;
     justify-self: center;
     grid-row: span 2; }
-    .contact__info__city, .contact__info__mail, .contact__info__git, .contact__info__linkedin {
-      margin: 40px 0; }
-      .contact__info__city i, .contact__info__mail i, .contact__info__git i, .contact__info__linkedin i {
-        padding: 0 5px; }
-      .contact__info__city a, .contact__info__mail a, .contact__info__git a, .contact__info__linkedin a {
-        display: block;
-        text-decoration: none;
-        color: #2d3986;
-        cursor: pointer;
-        transition: 0.2s; }
-        .contact__info__city a:hover, .contact__info__mail a:hover, .contact__info__git a:hover, .contact__info__linkedin a:hover {
-          color: #1e272e; }
+    .contact__info__ul {
+      list-style: none; }
+      .contact__info__ul__city, .contact__info__ul__mail, .contact__info__ul__git, .contact__info__ul__linkedin {
+        margin: 40px 0; }
+        .contact__info__ul__city i, .contact__info__ul__mail i, .contact__info__ul__git i, .contact__info__ul__linkedin i {
+          padding: 0 5px; }
+        .contact__info__ul__city a, .contact__info__ul__mail a, .contact__info__ul__git a, .contact__info__ul__linkedin a {
+          display: block;
+          text-decoration: none;
+          color: #2d3986;
+          cursor: pointer;
+          transition: 0.2s; }
+          .contact__info__ul__city a:hover, .contact__info__ul__mail a:hover, .contact__info__ul__git a:hover, .contact__info__ul__linkedin a:hover {
+            color: #1e272e; }
 
 @media screen and (max-width: 760px) {
   .contact {

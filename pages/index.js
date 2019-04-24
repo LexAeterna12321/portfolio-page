@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../styles.scss";
 import Head from "next/head";
-import Container from "../components/Container";
+import Container from "../components/shared/Container";
 import Home from "../components/home/Home";
 import About from "../components/about/About";
 import Portfolio from "../components/portfolio/Portfolio";

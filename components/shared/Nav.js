@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import PropTypes from 'prop-types';
 const Nav = ({ siteChange }) => {
   const [navState, setNavState] = useState({ active: false });
 
@@ -53,7 +53,10 @@ const Nav = ({ siteChange }) => {
 const style = {
   opacity: "1",
   pointerEvents: "all",
-
   transform: "translateX(0)"
 };
+
+Nav.propTypes={
+  siteChange: PropTypes.func.isRequired
+}
 export default Nav;

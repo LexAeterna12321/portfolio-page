@@ -12,10 +12,11 @@
     overflow-y: scroll;
     @include styledScroll;
 
-    &__h1 {
+    &__header {
         font-size: 1.5rem;
         text-transform: uppercase;
         margin: 10px;
+        font-weight: 700;
     }
 
     &__projects {

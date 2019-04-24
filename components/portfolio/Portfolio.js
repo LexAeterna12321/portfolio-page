@@ -1,9 +1,9 @@
 import Project from "./Project";
 const Portfolio = () => {
   return (
-    <div className="portfolio">
-      <h1 className="portfolio__h1">MY WORKS</h1>
-      <div className="portfolio__projects">
+    <section className="portfolio">
+      <header className="portfolio__header">MY WORKS</header>
+      <article className="portfolio__projects">
         <Project
           name="Train Through Life"
           img="TTL.png"
@@ -34,8 +34,8 @@ const Portfolio = () => {
           live="#"
           git="https://github.com/LexAeterna12321/portfolio-page"
         />
-      </div>
-    </div>
+      </article>
+    </section>
   );
 };
 
