@@ -94,7 +94,9 @@ const Contact = () => {
           ) : (
             <p />
           )}
-          <button type="submit">Send Message</button>
+          <button className="contact__button" type="submit">
+            Send Message
+          </button>
         </form>
       </div>
     </section>

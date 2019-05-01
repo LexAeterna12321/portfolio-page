@@ -705,6 +705,7 @@ var Contact = function Contact() {
     },
     __self: this
   }), react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement("button", {
+    className: "contact__button",
     type: "submit",
     __source: {
       fileName: _jsxFileName,

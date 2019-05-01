@@ -23,9 +23,7 @@
         transform: translate(-50%, -50%) rotate(-5deg);
         opacity: 0;
         transition: 0.3s ease-in-out;
-
     }
-
 
     &:hover {
         &::before {
