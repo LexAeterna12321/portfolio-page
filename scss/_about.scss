@@ -1,19 +1,30 @@
 .about {
     position: relative;
     max-width: $max-width;
-    padding: 100px 13%;
+    padding: 100px 13% 70px 13%;
     overflow: hidden;
     background-color: $secondary-color;
     color: $main-color;
     height: 100%;
     width: 100%;
     z-index: 1;
-    display: grid;
-    grid-gap: 30px;
     border: 15px $main-color solid;
     overflow-y: scroll;
-    grid-template-columns: repeat(2, 1fr);
     @include styledScroll;
+
+    &__container {
+        overflow-y: scroll;
+        scrollbar-width: 0px;
+        overflow-x: hidden;
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
 
     &__header,
     &__h2 {
@@ -66,7 +77,13 @@
         height: 100vh;
         width: 100vw;
         border: none;
-        grid-template-columns: 1fr;
+        overflow-y: scroll;
 
+        &__container {
+            grid-template-columns: 1fr;
+            height: 100%;
+            width: 100%;
+        }
     }
+
 }

@@ -1,7 +1,7 @@
 {
   "name": "portfolio-page",
   "version": "1.0.0",
-  "description": "",
+  "description": "Rafał Cieślik Portfolio Page",
   "main": "index.js",
   "scripts": {
     "dev": "next",

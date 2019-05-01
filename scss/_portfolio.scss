@@ -1,7 +1,7 @@
 .portfolio {
     position: relative;
     max-width: $max-width;
-    padding: 100px 13%;
+    padding: 100px 13% 70px 13%;
     overflow-x: hidden;
     background-color: $secondary-color;
     color: $main-color;
@@ -11,6 +11,18 @@
     border: 15px $main-color solid;
     overflow-y: scroll;
     @include styledScroll;
+
+    &__container {
+        overflow-y: scroll;
+        scrollbar-width: 0px;
+        overflow-x: hidden;
+        height: 100%;
+        scrollbar-width: none;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
 
     &__header {
         font-size: 1.5rem;

@@ -46,54 +46,57 @@ const Contact = () => {
   const { name, email, subject, message } = state;
   return (
     <section className="contact">
-      <header className="contact__header">Contact Me</header>
-      <ContactInfo />
-      <form
-        name="contact"
-        method="POST"
-        className="contact__form"
-        onSubmit={e => handleSubmit(e)}
-      >
-        <input
-          onChange={e => handleInputChange(e)}
-          onBlur={e => handleValidation(e)}
-          type="text"
-          name="name"
-          placeholder="Name"
-          value={name}
-        />
-        <input
-          onChange={e => handleInputChange(e)}
-          onBlur={e => handleValidation(e)}
-          type="email"
-          name="email"
-          placeholder="Email"
-          value={email}
-        />
-        <input
-          onChange={e => handleInputChange(e)}
-          onBlur={e => handleValidation(e)}
-          type="text"
-          name="subject"
-          placeholder="Subject"
-          value={subject}
-        />
-        <textarea
-          onChange={e => handleInputChange(e)}
-          onBlur={e => handleValidation(e)}
-          name="message"
-          cols="30"
-          rows="10"
-          placeholder="Message"
-          value={message}
-        />
-        {validationStatus ? (
-          <p className="contact__form__validationStatus">{validationStatus}</p>
-        ) : (
-          <p />
-        )}
-        <button type="submit">Send Message</button>
-      </form>
+      <div className="contact__container">
+        <header className="contact__header">Contact Me</header>
+        <ContactInfo />
+        <form
+          name="contact"
+          className="contact__form"
+          onSubmit={e => handleSubmit(e)}
+        >
+          <input
+            onChange={e => handleInputChange(e)}
+            onBlur={e => handleValidation(e)}
+            type="text"
+            name="name"
+            placeholder="Name"
+            value={name}
+          />
+          <input
+            onChange={e => handleInputChange(e)}
+            onBlur={e => handleValidation(e)}
+            type="email"
+            name="email"
+            placeholder="Email"
+            value={email}
+          />
+          <input
+            onChange={e => handleInputChange(e)}
+            onBlur={e => handleValidation(e)}
+            type="text"
+            name="subject"
+            placeholder="Subject"
+            value={subject}
+          />
+          <textarea
+            onChange={e => handleInputChange(e)}
+            onBlur={e => handleValidation(e)}
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="Message"
+            value={message}
+          />
+          {validationStatus ? (
+            <p className="contact__form__validationStatus">
+              {validationStatus}
+            </p>
+          ) : (
+            <p />
+          )}
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
     </section>
   );
 };
