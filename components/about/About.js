@@ -15,16 +15,13 @@ const About = ({ siteChange }) => {
               </span>
             </li>
             <li>
-              Job: <span>Clerk</span>
+              Job: <span>IT Specialist</span>
             </li>
             <li>
               Age: <span>30 Years</span>
             </li>
             <li>
               Residence: <span>Wrocław</span>
-            </li>
-            <li>
-              Dream Job: <span>Tech Job</span>
             </li>
           </ul>
         </article>
@@ -52,6 +49,6 @@ const About = ({ siteChange }) => {
 };
 
 About.propTypes = {
-  siteChange: PropTypes.func.isRequired
+  siteChange: PropTypes.func.isRequired,
 };
 export default About;

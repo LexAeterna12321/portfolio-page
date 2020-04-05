@@ -1,5 +1,6 @@
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import { useState } from "react";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 const Nav = ({ siteChange }) => {
   const [navState, setNavState] = useState({ active: false });
 
@@ -17,7 +18,13 @@ const Nav = ({ siteChange }) => {
 
   return (
     <nav className="nav">
-      <div className="hamburger" onClick={() => navToggle()}>
+      <div
+        className="hamburger"
+        onClick={navToggle}
+        role="button"
+        tabIndex={0}
+        onKeyDown={e => e.keyCode !== 9 && navToggle()}
+      >
         <span />
         <span />
         <span />
@@ -56,7 +63,7 @@ const style = {
   transform: "translateX(0)"
 };
 
-Nav.propTypes={
+Nav.propTypes = {
   siteChange: PropTypes.func.isRequired
-}
+};
 export default Nav;
